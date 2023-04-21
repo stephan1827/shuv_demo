@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EventBindingSet id="ContentKeyboard_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		
+		<EventBinding>
+			<Source xsi:type="clientSystem.Event" event="KeyDown" />
+			<EventHandler condition="key = &quot;F7&quot;" >
+				<Action>
+					<Target xsi:type="clientSystem.Action" >
+						<Method xsi:type="clientSystem.Action.Navigate" pageId="NavigationPage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="key = &quot;F8&quot;" >
+				<Action>
+					<Target xsi:type="clientSystem.Action" >
+						<Method xsi:type="clientSystem.Action.Navigate" pageId="ExpressionPage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="key = &quot;F2&quot;" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="KeyVariable" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="15" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.TextOutput.Action" contentRefId="ContentKeyboard" widgetRefId="TextOutputKey" >
+								<Method xsi:type="widgets.brease.TextOutput.Action.SetValue" value="=key"/>
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">		
+						<Action>
+							<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="ContentKeyboard" widgetRefId="NumericOutputKeyAscii" >
+								<Method xsi:type="widgets.brease.NumericOutput.Action.SetValue" value="=keyASCII"/>
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+	
+		<EventBinding>
+			<Source xsi:type="clientSystem.Event" event="KeyUp" />
+			<EventHandler condition="key = &quot;F2&quot;" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="KeyVariable" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding>
+			<Source xsi:type="clientSystem.Event" event="KeyPress" />
+			<EventHandler condition="key = &quot;?&quot;" >
+				<Action>
+					<Target xsi:type="clientSystem.Action" >
+						<Method xsi:type="clientSystem.Action.Navigate" pageId="DocuPage" />
+					</Target>
+
+				</Action>
+			</EventHandler>
+		</EventBinding>
+	
+	</Bindings>
+</EventBindingSet>

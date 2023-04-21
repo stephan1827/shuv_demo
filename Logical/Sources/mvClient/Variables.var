@@ -1,0 +1,3 @@
+VAR
+	clientSlots : ARRAY[0..4] OF ClientInfo;
+END_VAR

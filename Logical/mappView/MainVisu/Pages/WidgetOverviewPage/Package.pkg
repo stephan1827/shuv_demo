@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Page description">WidgetPage.page</Object>
+    <Object Type="File">ContentWidgets.content</Object>
+    <Object Type="File">ContentSimple.content</Object>
+    <Object Type="File">ContentContainer.content</Object>
+    <Object Type="File">ContentGraphic.content</Object>
+    <Object Type="File">ContentSystem.content</Object>
+    <Object Type="File">ContentControl.content</Object>
+    <Object Type="File">ContentDragDrop.content</Object>
+    <Object Type="File">SubContentDnD1.content</Object>
+    <Object Type="File">SubContentDnD2.content</Object>
+  </Objects>
+</Package>

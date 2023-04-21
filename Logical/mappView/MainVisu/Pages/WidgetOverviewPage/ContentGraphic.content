@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentGraphic" height="570" width="1200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+  
+		<Widget xsi:type="widgets.brease.RadialGauge" id="RadialGauge1" top="50" left="60" width="240" height="240" zIndex="0" text="RadialGauge1" />
+		<Widget xsi:type="widgets.brease.RadialGauge" id="RadialGauge2" top="310" left="60" width="240" height="240" zIndex="1" text="RadialGauge2" style="Gauge2_to80_green" />
+		<Widget xsi:type="widgets.brease.Image" id="Image1" top="70" left="380" width="600" height="190" zIndex="2" image="Media/BackGround/mappView.png" />
+		<Widget xsi:type="widgets.brease.BasicSlider" id="Slider1" top="310" left="380" width="450" height="40" zIndex="3" thumbSize="30px" />
+		<Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge1" top="437" left="380" width="689" zIndex="4" />
+  
+	</Widgets>
+</Content>

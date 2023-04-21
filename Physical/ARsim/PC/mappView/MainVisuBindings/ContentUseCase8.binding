@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentUseCase8_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+  
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:output_string_chart" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="Paper2" attribute="svgContent" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:raw_values_x_axis_1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="TableItem3" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:raw_values_y_axis_1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="TableItem2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:stroke_width_1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="DropDownBox2" attribute="selectedValue" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:stroke_color_1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="DropDownBox1" attribute="selectedValue" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:show_graph_2" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="CheckBox1" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:axis_scale_y" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="DropDownBox5" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:axis_scale_x" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="DropDownBox8" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:unit_y_axis" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="DropDownBox6" attribute="selectedValue" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Logarithmi:unit_x_axis" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase8" widgetRefId="DropDownBox7" attribute="selectedValue" />
+		</Binding>
+	</Bindings>
+</BindingsSet>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentVarList_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+			
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="brease" widgetRefId="DropDownBox1" contentRefId="ContentVarList" attribute="selectedIndex" />
+				<List refId="indexRed" />
+			</Source>
+			<Target xsi:type="brease" widgetRefId="NumericOutput1" contentRefId="ContentVarList" attribute="value"/>		
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="brease" widgetRefId="DropDownBox1" contentRefId="ContentVarList" attribute="selectedIndex" />
+				<List refId="indexGreen" />
+			</Source>
+			<Target xsi:type="brease" widgetRefId="NumericOutput2" contentRefId="ContentVarList" attribute="value"/>		
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="brease" widgetRefId="DropDownBox1" contentRefId="ContentVarList" attribute="selectedIndex" />
+				<List refId="indexBlue" />
+			</Source>
+			<Target xsi:type="brease" widgetRefId="NumericOutput3" contentRefId="ContentVarList" attribute="value"/>		
+		</Binding>
+		
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[0].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput4" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[0].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput5" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[0].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput6" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[1].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput7" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[1].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput8" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[1].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput9" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[2].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput10" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[2].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput11" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[2].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput12" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[3].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput13" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[3].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput14" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[3].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput15" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[4].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput16" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[4].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput17" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[4].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput18" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[5].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput19" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[5].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput20" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[5].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput21" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[6].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput22" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[6].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput23" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[6].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput24" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[7].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput25" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[7].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput26" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[7].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput27" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[8].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput28" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[8].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput29" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[8].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput30" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[9].Red" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput31" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[9].Green" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput32" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarList:Color[9].Blue" attribute="value" />
+			<Target xsi:type="brease" widgetRefId="NumericOutput33" contentRefId="ContentVarList" attribute="value" />
+		</Binding>
+		
+  </Bindings>
+</BindingsSet>

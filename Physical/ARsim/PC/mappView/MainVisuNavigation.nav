@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ndef:Navigation id="SwipeNavigation" xmlns:ndef="http://www.br-automation.com/iat2015/navigationDefinition/v2">
+	<NavigationPaths>
+		
+		<!--fromLeft always NavigationPage-->
+		<!--fromRight swipe through app pages-->
+
+
+		<NavigationPath refId="NavigationPage">
+			<Swipe fromRight="WidgetPage" />
+		</NavigationPath>
+		<NavigationPath refId="WidgetPage">
+			<Swipe fromLeft="NavigationPage" fromRight="TablePage" />
+		</NavigationPath>
+		<NavigationPath refId="TablePage">
+			<Swipe fromLeft="NavigationPage" fromRight="DocuPage" />
+		</NavigationPath>
+		<NavigationPath refId="DocuPage">
+			<Swipe fromLeft="NavigationPage" fromRight="UserLimitPage" />
+		</NavigationPath>
+		<NavigationPath refId="UserLimitPage">
+			<Swipe fromLeft="NavigationPage" fromRight="RightsRolePage" />
+		</NavigationPath>
+		<NavigationPath refId="RightsRolePage">
+			<Swipe fromLeft="NavigationPage" fromRight="ClientInfoPage" />
+		</NavigationPath>
+		<NavigationPath refId="ClientInfoPage">
+			<Swipe fromLeft="NavigationPage" fromRight="WebViewerPage" />
+		</NavigationPath>
+		<NavigationPath refId="WebViewerPage">
+			<Swipe fromLeft="NavigationPage" fromRight="EventPage" />
+		</NavigationPath>
+		<NavigationPath refId="EventPage">
+			<Swipe fromLeft="NavigationPage" fromRight="MediaPage" />
+		</NavigationPath>
+		<NavigationPath refId="MediaPage">
+			<Swipe fromLeft="NavigationPage" fromRight="UnitsPage" />
+		</NavigationPath>
+		<NavigationPath refId="UnitsPage">
+			<Swipe fromLeft="NavigationPage" fromRight="EmbVisuPage" />
+		</NavigationPath>
+		<NavigationPath refId="EmbVisuPage">
+			<Swipe fromLeft="NavigationPage" fromRight="VarListPage" />
+		</NavigationPath>
+		<NavigationPath refId="VarListPage">
+			<Swipe fromLeft="NavigationPage" fromRight="ThemePage" />
+		</NavigationPath>
+		<NavigationPath refId="ThemePage">
+			<Swipe fromLeft="NavigationPage" fromRight="StylePage" />
+		</NavigationPath>
+		<NavigationPath refId="StylePage">
+			<Swipe fromLeft="NavigationPage" fromRight="ExpressionPage" />
+		</NavigationPath>
+		<NavigationPath refId="ExpressionPage">
+			<Swipe fromLeft="NavigationPage" fromRight="KeyboardPage" />
+		</NavigationPath>
+		<NavigationPath refId="KeyboardPage">
+			<Swipe fromLeft="NavigationPage" fromRight="ChartPage" />
+		</NavigationPath>
+		<NavigationPath refId="ChartPage">
+			<Swipe fromLeft="NavigationPage" fromRight="FavoriteWatchPage" />
+		</NavigationPath>
+		<NavigationPath refId="FavoriteWatchPage">
+			<Swipe fromLeft="NavigationPage" fromRight="ProfileGenPage" />
+		</NavigationPath>
+		<NavigationPath refId="ProfileGenPage">
+			<Swipe fromLeft="NavigationPage" fromRight="UseCasePage" />
+		</NavigationPath>
+		<NavigationPath refId="UseCasePage">
+			<Swipe fromLeft="NavigationPage" fromRight="AnimationPage" />
+		</NavigationPath>
+		<NavigationPath refId="AnimationPage">
+			<Swipe fromLeft="NavigationPage" fromRight="WidgetPage" />
+		</NavigationPath>
+		
+		
+		
+	</NavigationPaths>
+</ndef:Navigation>

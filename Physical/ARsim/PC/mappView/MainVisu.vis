@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vdef:Visualization id="mvHighlight" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+  	<StartPage pageRefId="MainPage" />
+  	<Pages>
+    	<Page refId="MainPage"/>
+		<Page refId="NavigationPage"/>
+		<Page refId="WidgetPage"/>
+		<Page refId="TablePage"/>
+		<Page refId="DocuPage" />
+		<Page refId="UserLimitPage" />
+		<Page refId="RightsRolePage" />
+		<Page refId="ClientInfoPage" />
+		<Page refId="WebViewerPage" />
+		<Page refId="EventPage" />
+		<Page refId="MediaPage" />
+		<Page refId="UnitsPage" />
+		<Page refId="EmbVisuPage" />
+		<Page refId="ThemePage" />
+		<Page refId="StylePage" />
+		<Page refId="ExpressionPage" />
+		<Page refId="VarListPage" />
+		<Page refId="KeyboardPage" />
+		<Page refId="ChartPage" />
+		<Page refId="FavoriteWatchPage" />
+		<Page refId="ProfileGenPage" />
+		<Page refId="UseCasePage" />
+		<Page refId="AnimationPage" />
+		
+		<Page refId="ScreenSaverPage" />
+  	</Pages>
+  	<Navigations>
+    	<Navigation refId="SwipeNavigation" />
+  	</Navigations>  
+	<BindingsSets>
+		<BindingsSet refId="ContentHeaderNavigation_binding" />
+		<BindingsSet refId="ContentMainPage_binding" />
+		<BindingsSet refId="ContentNavigation_binding" />
+		<BindingsSet refId="ContentUnitsPage_binding" />
+				
+		<BindingsSet refId="ContentSimple_binding" />
+		<BindingsSet refId="ContentContainer_binding" />
+		<BindingsSet refId="ContentGraphic_binding" />
+		<BindingsSet refId="ContentControl_binding" />
+		
+		<BindingsSet refId="ContentUserLimit_binding" />
+		<BindingsSet refId="ContentClientInfo_binding" />
+		<BindingsSet refId="ContentEventPage_binding" />
+		<BindingsSet refId="ContentTablePage_binding" />
+		<BindingsSet refId="ContentExpressions_binding" />
+		<BindingsSet refId="ContentVarList_binding" />
+		<BindingsSet refId="ContentStylePage_binding" />
+		<BindingsSet refId="ContentKeyboard_binding" />
+		<BindingsSet refId="ContentChartPage_binding" />
+		<BindingsSet refId="ContentProfileGen_binding" />
+		<BindingsSet refId="ContentFavoriteWatch_binding" />
+		<BindingsSet refId="ContentAnimationPage_binding" />
+		<!--use cases -->
+		<BindingsSet refId="ContentUseCaseBase_binding" />
+		<BindingsSet refId="ContentUseCase1_binding" />
+		<BindingsSet refId="ContentUseCase3_binding" />
+		<BindingsSet refId="ContentUseCase4_binding" />
+		<BindingsSet refId="ContentUseCase5_binding" />
+		<BindingsSet refId="ContentUseCase6_binding" />
+		<BindingsSet refId="ContentUseCase7_binding" />
+		<BindingsSet refId="ContentUseCase8_binding" />
+		<!--global bindings-->
+		<BindingsSet refId="g_SystemInfo_binding" />
+		<!--dialog bindings-->
+		<BindingsSet refId="ContentFormular_binding" />
+	</BindingsSets>
+	<EventBindingsSets>
+		<!-- initialization -->
+		<EventBindingsSet refId="Initialization_eventbinding" />
+		<!--pages-->
+		<EventBindingsSet refId="ContentHeader_eventbinding" />
+		<EventBindingsSet refId="ContentNavigation_eventbinding" />
+		<EventBindingsSet refId="ContentSystem_eventbinding" />
+		<EventBindingsSet refId="ContentEventPage_eventbinding" />
+		<EventBindingsSet refId="ContentThemePage_eventbinding" />
+		<EventBindingsSet refId="ContentKeyboard_eventbinding" />
+		<EventBindingsSet refId="ContentStylePage_eventbinding" />
+		<EventBindingsSet refId="ContentProfileGen_eventbinding" />
+		<EventBindingsSet refId="ContentFavoriteWatch_eventbinding" />
+		<EventBindingsSet refId="ContentChartPage_eventbinding" />
+		<EventBindingsSet refId="ContentUseCase2_eventbinding" />
+		<EventBindingsSet refId="ContentUseCase3_eventbinding" />
+		<EventBindingsSet refId="ContentUseCase6_eventbinding" />
+		<EventBindingsSet refId="ContentUseCase9_eventbinding"/>
+		<EventBindingsSet refId="ContentAnimationPage_eventbinding" />
+		<EventBindingsSet refId="ContentUseCaseBase_eventbinding" />
+		<EventBindingsSet refId="ContentScreenSaver_eventbinding" />
+		<!--dialogs-->
+		<EventBindingsSet refId="ContentEvent_eventbinding" />
+		<EventBindingsSet refId="ContentLogin_eventbinding" />
+		<EventBindingsSet refId="ContentFormular_eventbinding" />
+		<!--widget overview-->
+		<EventBindingsSet refId="ContentDragDrop_eventbinding" />
+	</EventBindingsSets>
+	<Dialogs>
+    	<Dialog refId="LoginDialog" />
+		<Dialog refId="EventDialog" />
+		<Dialog refId="DialogChartMenu" />
+		<Dialog refId="DialogConfigMenu" />
+		<Dialog refId="DialogUserMenu" />
+		<Dialog refId="DialogFormular" />
+  	</Dialogs>
+  	<Contents>
+		<!--contents loaded by ContentControl in WidgetOverviewPage-->
+		<Content refId="ContentSimple" />
+		<Content refId="ContentContainer" />
+		<Content refId="ContentGraphic" />
+		<Content refId="ContentSystem" />
+		<Content refId="ContentControl" />
+		<Content refId="ContentDragDrop" />
+		<Content refId="SubContentDnD1" />
+		<Content refId="SubContentDnD2" />
+		
+		<!--contents loaded by action LoadContentToArea-->
+		<Content refId="ContentUseCase1" />
+    	<Content refId="ContentUseCase2" />
+		<Content refId="ContentUseCase3" />	
+		<Content refId="ContentUseCase5" />
+		<Content refId="ContentUseCase6" />
+		<Content refId="ContentUseCase7" />
+		<Content refId="ContentUseCase8" />
+		<Content refId="ContentUseCase9" />
+  	</Contents>
+  	<SnippetsSets>
+    	<SnippetsSet refId="mySnippets"/>
+  	</SnippetsSets>
+  	<ExpressionsSets>
+    	<ExpressionsSet refId="myExpressionSet"/>
+  	</ExpressionsSets>
+  	<VariablesSets>
+    	<VariablesSet refId="SessionVariablesMain" />
+		<VariablesSet refId="Formular_svar" />
+  	</VariablesSets>
+	<StartTheme themeRefId="BuRTheme1" />
+	<Themes>
+	   	<Theme refId="BuRTheme1"/>
+		<Theme refId="DayTheme" />
+		<Theme refId="NightTheme" />
+	</Themes>
+  	<Configurations>
+    	<Configuration key="activityCount" value="true" />
+		<Configuration key="zoom" value="true" />
+		<Configuration key="bootLogo" value="Media/BackGround/Bootlogo.png" />
+		<Configuration key="bootColor" value="#FFFFFF" />
+		<Configuration key="favicon" value="Media/BackGround/Browserlogo.ico" />
+		<Gestures>
+			<SystemGesture1 touchPoints="2" />
+			<SystemGesture2 touchPoints="2" />
+			<SystemGesture3 touchPoints="2" />
+		</Gestures>
+  	</Configurations>
+</vdef:Visualization>

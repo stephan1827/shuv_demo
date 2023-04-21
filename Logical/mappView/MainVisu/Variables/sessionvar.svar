@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VariablesSet  id="SessionVariablesMain" xmlns="http://www.br-automation.com/iat2015/session/engineering/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<Variables>
+	
+	
+		<!--apps-->
+	  	<Variable name="App1" scope="session" xsi:type="BOOL" value="true" />
+		<Variable name="App2" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App3" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App4" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App5" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App6" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App7" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App8" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App9" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App10" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App11" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App12" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App13" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App14" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App15" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App16" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App17" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App18" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App19" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App20" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App21" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App22" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App23" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App24" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App25" scope="session"  xsi:type="BOOL" value="true" />
+		<Variable name="App26" scope="session"  xsi:type="BOOL" value="true" />
+		
+
+		<Variable name="CloseAndLogout" scope="session"  xsi:type="BOOL" value="false" />
+		<Variable name="MachineState" scope="session"  xsi:type="ANY_INT" value="0" />
+		<Variable name="DayNightTheme" scope="session"  xsi:type="ANY_INT" value="0" />
+		<Variable name="DayNight" scope="session"  xsi:type="BOOL" value="false" />
+		
+		<Variable name="Expression1" scope="session"  xsi:type="BOOL" value="false" />
+		<Variable name="Expression2" scope="session"  xsi:type="BOOL" value="false" />
+		<Variable name="Expression3" scope="session"  xsi:type="ANY_INT" value="0" />
+		<Variable name="ServiceSelect" scope="session" xsi:type="ANY_INT" value="0" />
+		
+		<Variable name="KeyVariable" scope="session" xsi:type="ANY_INT" value="0" />
+		
+		<Variable name="CursorStepSize" scope="session" xsi:type="ANY_INT" value="1" />
+		
+		<Variable name="VisuDescription" scope="session" xsi:type="ANY_STRING" value="" />
+		
+		<Variable name="TemperatureSnippetValue" scope="session" xsi:type="ANY_STRING" value="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" />
+		<Variable name="LengthSnippetValue" scope="session" xsi:type="ANY_STRING" value="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" />
+		<Variable name="PressureSnippetValue" scope="session" xsi:type="ANY_STRING" value="{'metric':'BAR','imperial':'BAR','imperial-us':'BAR'}" />
+		<Variable name="SelectIndexDropDown1" scope="session" xsi:type="ANY_INT" value="0" />
+		<Variable name="SelectIndexDropDown2" scope="session" xsi:type="ANY_INT" value="0" />
+		<Variable name="SelectIndexDropDown3" scope="session" xsi:type="ANY_INT" value="0" />
+		
+
+		<Variable name="SelectIndexUseCasePage" scope="session" xsi:type="ANY_STRING" value="3" />
+		
+		<Variable name="UseCaseCursor1" xsi:type="ANY_INT" value="0"  />
+		<Variable name="UseCaseCursor2" xsi:type="ANY_INT" value="0"  />
+		
+		<Variable name="InputValue1" xsi:type="ANY_INT" value="10" />
+		<Variable name="InputValue2" xsi:type="ANY_INT" value="20" />   
+		<Variable name="OutputValue1" xsi:type="ANY_INT" value="0" />
+		<Variable name="OutputValue2" xsi:type="ANY_INT" value="0" />  
+		
+		<Variable name="PageId" xsi:type="ANY_STRING" value="UseCasePage" />
+		
+		<Variable name="xValueJoystick" xsi:type="ANY_REAL" value="0.0" />
+		<Variable name="yValueJoystick" xsi:type="ANY_REAL" value="0.0" />
+		
+		<Variable name="gpTextIndex" xsi:type="ANY_INT" value="0" />
+		
+		<Variable name="LastPageBeforeScreenSaver" xsi:type="ANY_STRING" value="" />
+		
+		<!--InfoBanner show after login-->
+		<Variable name="LoginSuccess" xsi:type="BOOL" value="false" />
+		
+		<Variable name="DndResetTop" xsi:type="BOOL" value="false" />
+		<Variable name="DndResetBottom" xsi:type="BOOL" value="false" />
+	</Variables>
+</VariablesSet>

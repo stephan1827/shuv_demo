@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentUseCaseBase" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="275" left="-151" width="388" height="55" zIndex="1" multiLine="true" text="$Page.UseCase" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="2" image="Media/SVGsymbols/Edit/Help.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.TextPicker" id="TextPicker1" top="12" left="1320" width="280" height="433" zIndex="3" dataProvider="[{'value':'0','text':'$IAT/useCase/pickerUseCase1'},{'value':'1','text':'$IAT/useCase/pickerUseCase2'},{'value':'2','text':'$IAT/useCase/pickerUseCase3'},{'value':'3','text':'$IAT/useCase/pickerUseCase4'},{'value':'4','text':'$IAT/useCase/pickerUseCase5'},{'value':'5','text':'$IAT/useCase/pickerUseCase6'},{'value':'6','text':'$IAT/useCase/pickerUseCase7'},{'value':'7','text':'$IAT/useCase/pickerUseCase8'},{'value':'8','text':'$IAT/useCase/pickerUseCase9'}]" itemAlign="right" itemPadding="12px" padding="5px" selectedIndex="3" selectedValue="3" borderWidth="1px" borderStyle="none" cornerRadius="999px 0px 0px 999px" backColor="rgba(255, 255, 255, 0)" fontSize="18px" itemShadow="5px 5px 20px 0px rgba(62, 79, 92, 0.75)" itemBorderStyle="none" />
+  </Widgets>
+</Content>

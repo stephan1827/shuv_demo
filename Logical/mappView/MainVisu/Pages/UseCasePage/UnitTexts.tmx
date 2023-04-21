@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="tempUnit.0">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="tempUnit.1">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'FAH','imperial':'FAH','imperial-us':'FAH'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'FAH','imperial':'FAH','imperial-us':'FAH'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="tempUnit.2">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'KEL','imperial':'KEL','imperial-us':'KEL'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'KEL','imperial':'KEL','imperial-us':'KEL'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="lengthUnit.0">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="lengthUnit.1">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'CMT','imperial':'CMT','imperial-us':'CMT'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'CMT','imperial':'CMT','imperial-us':'CMT'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="lengthUnit.2">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'DMT','imperial':'DMT','imperial-us':'DMT'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'DMT','imperial':'DMT','imperial-us':'DMT'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="lengthUnit.3">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'MTR','imperial':'MTR','imperial-us':'MTR'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'MTR','imperial':'MTR','imperial-us':'MTR'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pressureUnit.0">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'BAR','imperial':'BAR','imperial-us':'BAR'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'BAR','imperial':'BAR','imperial-us':'BAR'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pressureUnit.1">
+      <tuv xml:lang="de">
+        <seg>{{'metric':'PS','imperial':'PS','imperial-us':'PS'}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{{'metric':'PS','imperial':'PS','imperial-us':'PS'}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="testSnippet" />
+  </body>
+</tmx>

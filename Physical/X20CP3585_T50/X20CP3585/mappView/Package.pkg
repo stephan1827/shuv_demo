@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package PackageType="mappViewControl" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\T50wide.vis</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\T50high.vis</Object>
+    <Object Type="Package">T50Bindings</Object>
+    <Object Type="File">Config.mappviewcfg</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ContentUseCase6_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+
+		
+		<EventBinding  id="ContentUseCase6.ButtonAccept.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUseCase6" widgetRefId="ButtonAccept" event="Click" />
+			<Operand name="InputValue1" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="InputValue1" > 
+					<Method xsi:type="session.VariableAction.GetValue" /> 
+				</ReadTarget>
+			</Operand>
+			<Operand name="InputValue2" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="InputValue2" > 
+					<Method xsi:type="session.VariableAction.GetValue" /> 
+				</ReadTarget>
+			</Operand>	
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="session.VariableAction" refId="OutputValue1" >
+								<Method xsi:type="session.VariableAction.SetValueNumber" value="=InputValue1" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+			
+						<Action>
+							<Target xsi:type="session.VariableAction" refId="OutputValue2" >
+								<Method xsi:type="session.VariableAction.SetValueNumber" value="=InputValue2" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="2">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentUseCase6" widgetRefId="ButtonConfirm" >
+								<Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+
+			</EventHandler>
+		</EventBinding>
+
+		<EventBinding  id="ContentUseCase6.ButtonConfirm.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUseCase6" widgetRefId="ButtonConfirm" event="Click" />
+			<Operand name="OutputValue1" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="OutputValue1" > 
+					<Method xsi:type="session.VariableAction.GetValue" /> 
+				</ReadTarget>
+			</Operand>
+			<Operand name="OutputValue2" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="OutputValue2" > 
+					<Method xsi:type="session.VariableAction.GetValue" /> 
+				</ReadTarget>
+			</Operand>	
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="opcUa.NodeAction" refId="::Simulation:X" >
+								<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=OutputValue1" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="opcUa.NodeAction" refId="::Simulation:Y" >
+								<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=OutputValue2" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="2">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentUseCase6" widgetRefId="ButtonConfirm" >
+								<Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+	</Bindings>
+</EventBindingSet>

@@ -1,0 +1,8 @@
+VAR
+	basicTemperature : REAL;
+	basicPressure : REAL;
+	basicLength : REAL;
+	useCaseAnimations : ARRAY[0..6] OF STRING[255];
+	useCaseTransformation : STRING[255];
+	transformationIndex : INT;
+END_VAR

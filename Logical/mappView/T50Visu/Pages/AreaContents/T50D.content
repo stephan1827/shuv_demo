@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cT50D" height="480" width="480" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="140" left="60" width="340" height="200" zIndex="0" image="Media/BackGround/MultiTouch.png" />
+    <Widget xsi:type="widgets.brease.Button" id="Button1" top="20" left="100" width="100" height="100" zIndex="1" image="Media/SVGsymbols/Arrow/ArrowRight.svg" imageHeight="64" imageWidth="64" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" cornerRadius="40px 10px" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="Button2" top="20" left="300" width="160" height="100" zIndex="2" text="Engine ON" cornerRadius="40px 10px" rotation="5deg" style="Command" visible="false" />
+    <Widget xsi:type="widgets.brease.Button" id="Button3" top="360" left="300" width="160" height="100" zIndex="3" text="Engine OFF" cornerRadius="40px 10px" rotation="-5deg" style="Command" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageList1" top="360" left="120" width="100" height="100" zIndex="4" imageList="['Engine.svg', 'EngineMove.svg']" imagePrefix="Media/ImageList/Engine/" />
+  </Widgets>
+</Content>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="smartMainContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SmartSimu:currentOEE" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="NumericOutput2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SmartSimu:currentOEE" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="PieChartItem1" attribute="value" />
+		</Binding>	
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SmartSimu:emtptyOEE" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="PieChartItem2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[0]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[1]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[2]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[3]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[4]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem5" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[5]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem6" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[6]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem7" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[7]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem8" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[8]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem9" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue[9]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="BarChartItem10" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="::SYSTEM:clientInfo.ipAddress" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="TextOutput1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="::SYSTEM:clientInfo.userId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="TextOutput2" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="smartMainContent" widgetRefId="DateTimeOutput1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="Timeline1" attribute="startTime" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SmartSimu:timeLineData" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="Timeline1" attribute="data" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="smartMainContent" widgetRefId="Password1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="LoginButton1" attribute="password" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="smartMainContent" widgetRefId="TextInput1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartMainContent" widgetRefId="LoginButton1" attribute="userName" />
+		</Binding>
+
+	
+	</Bindings>
+</BindingsSet>

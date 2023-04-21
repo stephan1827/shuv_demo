@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pdef:Page id="MediaPage" 
+	layoutRefId="DefaultLayout" 
+	displayName="Page.Recipes"
+	xmlns:pdef="http://www.br-automation.com/iat2015/pageDefinition/v2">
+	<Assignments>
+		<Assignment type="Content" baseContentRefId="ContentMediaPage" areaRefId="AreaContent" backGroundGradient="linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 90%)" />
+		<Assignment type="Content" baseContentRefId="ContentHeader" areaRefId="AreaHeader" backGroundGradient="linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%)"/>
+		<Assignment type="Content" baseContentRefId="ContentBottomHome" areaRefId="AreaBottom" backColor="rgba(229,229,229,1)" />  
+
+	</Assignments>
+</pdef:Page>

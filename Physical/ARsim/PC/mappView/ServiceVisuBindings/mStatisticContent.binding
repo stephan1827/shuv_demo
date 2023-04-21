@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="mStatisticContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+  <Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:graphValue[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="PieChartItem6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:graphValue[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="PieChartItem5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:graphValue[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="PieChartItem4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[9].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[8].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[7].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[6].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[5].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[4].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[3].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[2].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[1].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:StackedBarChart[0].Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="StackedBarChartItem1" attribute="value" />
+</Binding>
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Chart:graphValue[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="mStatisticContent" widgetRefId="BasicSlider2" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

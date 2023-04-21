@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentDragDrop" height="570" width="1200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDragTop" top="160" left="60" width="120" height="50" zIndex="0" draggable="true" text="Drag me..." style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.FlexBox" id="FlexBox1" top="20" left="480" width="680" height="540" zIndex="1">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem1" zIndex="0" text="Drop button here...">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl1" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem2" zIndex="1" text="Drop button here...">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl2" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDragBottom" top="400" left="60" width="120" height="50" zIndex="2" draggable="true" text="Drag me..." style="defaultSmall" />
+  </Widgets>
+</Content>

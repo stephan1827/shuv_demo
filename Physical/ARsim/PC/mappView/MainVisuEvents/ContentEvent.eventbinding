@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EventBindingSet id="ContentEvent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+	
+		
+	
+
+		
+
+		<!-- close event dialog -->
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentEvent" widgetRefId="ButtonClose" event="Click"/>
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="EventDialog" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentEvent" widgetRefId="ButtonOn" event="Click"/>
+			<EventHandler>
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="MachineState" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="1" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentEvent" widgetRefId="ButtonOff" event="Click"/>
+			<EventHandler>
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="MachineState" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+	</Bindings>
+</EventBindingSet>

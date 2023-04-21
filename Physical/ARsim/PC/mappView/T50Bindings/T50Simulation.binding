@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="T50SimulationBinding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="cT50B" widgetRefId="NumericInput1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cT50B" widgetRefId="WPLinearGauge1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="cT50B" widgetRefId="NumericInput1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cT50B" widgetRefId="WPRadialGauge1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="cT50B" widgetRefId="NumericInput1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cT50B" widgetRefId="WPRadialGauge2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="cT50A" widgetRefId="WPNumericInput1" attribute="node" />
+			<Target xsi:type="brease" contentRefId="cT50A" widgetRefId="WPNumericOutput1" attribute="node" />
+		</Binding>
+
+		
+		
+  	</Bindings>
+</BindingsSet>

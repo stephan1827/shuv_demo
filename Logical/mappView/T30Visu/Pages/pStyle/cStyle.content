@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cStyleT30" height="485" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.CheckBox" id="bVisible" top="220" left="640" width="260" height="70" zIndex="0" boxSize="40" multiLine="true" text="Visible Chart  Navigation" fontName="Arial" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="28" left="40" width="940" height="50" zIndex="1" text="Style" borderWidth="0px 0px 4px 0px" borderColor="rgba(255, 136, 0, 1)" borderStyle="solid" textAlign="left" fontSize="30px" padding="0px 0px 0px 0px" margin="0px" style="TitelLabel" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="157" left="162" width="320" height="196" zIndex="2" text="$IAT/Page.StyleChange">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="34" left="159" width="121" height="36" zIndex="0" value="50.4" style="OutputLarge" />
+        <Widget xsi:type="widgets.brease.Button" id="Button8" top="87" left="159" width="121" height="42" zIndex="1" text="Button8" fontSize="16px" style="defaultSmall" />
+        <Widget xsi:type="widgets.brease.Label" id="Label16" top="43" left="29" width="91" height="57" zIndex="2" multiLine="true" text="$Page.Event" wordWrap="true" textAlign="center" style="Caption" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

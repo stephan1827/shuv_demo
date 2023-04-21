@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentUseCase5" height="700" width="1220" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="10" left="10" width="1200" zIndex="0" cornerRadius="0px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="20" width="1160" height="90" zIndex="0" multiLine="true" text="$IAT/useCase/UseCase5" wordWrap="true" style="Caption" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="170" left="10" width="1200" height="520" zIndex="1" cornerRadius="0px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.LineChart" id="LineChart1" top="7" left="8" width="811" height="466" zIndex="1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.LineChartIndexAxis" id="LineChartIndexAxis1" zIndex="0">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.LineChartXAxisIndexCursor" id="LineChartXAxisIndexCursor1" zIndex="0" lineColor="rgba(0, 192, 0, 0.4)" activeLineColor="rgba(0, 192, 0, 1)" />
+                <Widget xsi:type="widgets.brease.LineChartXAxisIndexCursor" id="LineChartXAxisIndexCursor2" zIndex="1" lineColor="rgba(0, 0, 255, 0.4)" activeLineColor="rgba(0, 0, 255, 1)" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.LineChartYAxis" id="LineChartYAxis1" zIndex="1">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.LineChartGraph" id="LineChartGraph1" zIndex="0" xAxisRefId="LineChartIndexAxis1" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.LineChartIndexAxis" id="LineChartIndexAxis2" zIndex="2" visible="false">
+              <Widgets />
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.RadialGauge" id="RadialGauge1" top="26" left="725" width="455" height="455" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" majorTicks="20" maxValue="50" minValue="-50" minorTicks="5" range="220" startAngle="340" text=" " borderWidth="0px" backColor="rgba(255, 255, 255, 0)" backGroundGradient="none" backColorScaleArea1="rgba(214, 214, 214, 1)" backColorScaleArea2="rgba(214, 214, 214, 1)" backColorScaleArea3="rgba(214, 214, 214, 1)" backColorScaleArea4="rgba(214, 214, 214, 1)" backColorScaleArea5="rgba(214, 214, 214, 1)" pointerBackColor="rgba(255, 136, 0, 1)" pointerPathColor="rgba(100, 100, 100, 1)" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

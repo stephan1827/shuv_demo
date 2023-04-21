@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionsSet id="myExpressionSet"  xmlns="http://www.br-automation.com/iat2015/expression/engineering/v3" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Expressions>
+		<Expression xsi:type="content" id="myANDExpr1" contentRefId="ContentExpressions"  type="MyAndExpressionType" />
+		
+		<Expression xsi:type="content" id="myCursorDistance" contentRefId="ContentUseCase4"  type="MyCursorExpressionType" />
+		
+		<Expression xsi:type="content" id="myCursorIndexDistance" contentRefId="ContentUseCase5"  type="MyCursorExpressionType" />
+	</Expressions>
+</ExpressionsSet>

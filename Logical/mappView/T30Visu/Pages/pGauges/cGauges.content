@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cGaugesT30" height="485" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.RadialGauge" id="WPRadialGauge1" top="100" left="160" width="280" height="280" zIndex="0" text="RadialGauge1" borderWidth="3px" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="WPRadialGauge2" top="100" left="580" width="280" height="280" zIndex="1" startAngle="180" text="RadialGauge2" borderWidth="3px" backColorScaleArea1="rgba(255, 255, 128, 1)" style="Gauge2_to80_green" />
+    <Widget xsi:type="widgets.brease.LinearGauge" id="WPLinearGauge1" top="400" left="120" width="360" height="60" zIndex="2" areasSize="20" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="28" left="40" width="940" height="50" zIndex="3" text="Gauges" borderWidth="0px 0px 4px 0px" borderColor="rgba(255, 136, 0, 1)" borderStyle="solid" textAlign="left" fontSize="30px" padding="0px 0px 0px 0px" margin="0px" style="TitelLabel" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="400" left="660" width="120" height="60" zIndex="4" value="55" fontSize="22px" />
+  </Widgets>
+</Content>

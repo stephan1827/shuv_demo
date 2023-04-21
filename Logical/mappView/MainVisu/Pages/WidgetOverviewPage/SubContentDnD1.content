@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="SubContentDnD1" height="210" width="640" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonResetTop" top="20" left="520" zIndex="0" text="Reset" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="90" left="60" width="520" zIndex="1" text="Content A was loaded to ContentControl widget." bold="true" />
+  </Widgets>
+</Content>

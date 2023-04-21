@@ -1,0 +1,4 @@
+VAR
+	myTable : TableStruct;
+	selectedTableIndex : INT;
+END_VAR

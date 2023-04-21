@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cBodyBarT30" height="485" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Button" id="WPButton1" top="100" left="60" width="160" height="80" zIndex="0" text="Button" fontSize="22px" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.Button" id="WPButton2" top="100" left="260" width="180" height="80" zIndex="1" image="Media/SVGsymbols/Symbols/Service.svg" text="Button" imageHeight="48" imageWidth="48" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" fontSize="22px" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="WPCheckBox1" top="220" left="60" width="197" height="50" zIndex="2" boxSize="40" text="CheckBox 1" fontSize="22px" />
+    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="WPRadioButtonGroup1" top="205" left="260" width="200" height="260" zIndex="3" childPositioning="relative">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton1" top="10" left="0" width="185" height="50" zIndex="0" boxSize="40" text="RadioButton 1" fontSize="20px" margin="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton2" top="10" left="0" width="185" height="50" zIndex="1" boxSize="40" text="RadioButton 2" fontSize="20px" margin="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton3" top="10" left="0" width="185" height="50" zIndex="2" boxSize="40" text="RadioButton 3" fontSize="20px" margin="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton4" top="10" left="0" width="185" height="50" zIndex="3" boxSize="40" text="RadioButton 4" fontSize="20px" margin="5px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.DropDownBox" id="WPDropDownBox1" top="100" left="520" width="200" height="80" zIndex="4" dataProvider="[{'value':0,'text':'Item 0'},{'value':1,'text':'Item 1'},{'value':2,'text':'Item 2'}]" fontSize="22px" />
+    <Widget xsi:type="widgets.brease.ListBox" id="WPListBox1" top="220" left="520" width="200" height="140" zIndex="5" dataProvider="[{'value':0,'text':'List item 0'},{'value':1,'text':'List item 1'},{'value':2,'text':'List item 2'},{'value':3,'text':'List item 3'},{'value':4,'text':'List item 4'},{'value':5,'text':'List item 5'}]" itemHeight="45" cornerRadius="8px" fontSize="22px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="WPNumericInput1" top="400" left="520" width="180" height="60" zIndex="6" maxValue="500" value="456" fontSize="22px" style="Input" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="WPNumericOutput1" top="400" left="760" width="180" height="60" zIndex="7" fontSize="22px" style="Output" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="WPToggleSwitch1" top="100" left="780" width="188" height="80" zIndex="8" mouseDownText="On" text="Off" fontSize="22px" fontName="Arial" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="WPToggleButton4" top="240" left="800" width="120" height="120" zIndex="9" mouseDownText="Off" text="On" cornerRadius="999px" fontSize="22px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="28" left="40" width="920" height="50" zIndex="10" text="         Widget overview" borderWidth="0px 0px 4px 0px" borderColor="rgba(255, 136, 0, 1)" borderStyle="solid" textAlign="left" fontSize="30px" margin="0px" style="TitelLabel" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="WPCheckBox2" top="280" left="60" width="197" height="50" zIndex="11" boxSize="40" text="CheckBox 2" fontSize="22px" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="WPCheckBox3" top="340" left="60" width="197" height="50" zIndex="12" boxSize="40" text="CheckBox 3" fontSize="22px" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="WPCheckBox4" top="400" left="60" width="197" height="50" zIndex="13" boxSize="40" text="CheckBox 4" fontSize="22px" />
+  </Widgets>
+</Content>

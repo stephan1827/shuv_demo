@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package PackageType="PagesPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="AreaContents">AreaContents</Object>
+    <Object Type="Package">MainPage</Object>
+    <Object Type="Package">NavigationPage</Object>
+    <Object Type="Package">WidgetOverviewPage</Object>
+    <Object Type="Package">TablePage</Object>
+    <Object Type="Package">DocuPage</Object>
+    <Object Type="Package">UserLimitPage</Object>
+    <Object Type="Package">RightsRolePage</Object>
+    <Object Type="Package">ClientInfoPage</Object>
+    <Object Type="Package">WebViewerPage</Object>
+    <Object Type="Package">EventPage</Object>
+    <Object Type="Package">MediaPage</Object>
+    <Object Type="Package">UnitsPage</Object>
+    <Object Type="Package">EmbVisuPage</Object>
+    <Object Type="Package">VarListPage</Object>
+    <Object Type="Package">ThemePage</Object>
+    <Object Type="Package">StylePage</Object>
+    <Object Type="Package">ExpressionPage</Object>
+    <Object Type="Package">KeyborardPage</Object>
+    <Object Type="Package">ChartPage</Object>
+    <Object Type="Package">FavoriteWatchPage</Object>
+    <Object Type="Package">ProfileGenPage</Object>
+    <Object Type="Package">UseCasePage</Object>
+    <Object Type="Package">ScreenSaverPage</Object>
+    <Object Type="Package">AnimationPage</Object>
+  </Objects>
+</Package>

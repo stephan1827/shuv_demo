@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="Client.Common">
+      <tuv xml:lang="de">
+        <seg>Visualisierungs-Client Information</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Visualization client information</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Slot0">
+      <tuv xml:lang="de">
+        <seg>Gerät 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Device 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Slot1">
+      <tuv xml:lang="de">
+        <seg>Gerät 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Device 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Slot2">
+      <tuv xml:lang="de">
+        <seg>Gerät 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Device 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Slot3">
+      <tuv xml:lang="de">
+        <seg>Gerät 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Device 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Slot4">
+      <tuv xml:lang="de">
+        <seg>Gerät 5</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Device 5</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.IP">
+      <tuv xml:lang="de">
+        <seg>IP Adresse</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>IP address</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.User">
+      <tuv xml:lang="de">
+        <seg>Benutzer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Language">
+      <tuv xml:lang="de">
+        <seg>Sprache</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Language</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Measurementsystem">
+      <tuv xml:lang="de">
+        <seg>Maßsystem</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Unit system</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Screen">
+      <tuv xml:lang="de">
+        <seg>Bildschirm Auflösung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Screen resolution</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Browser">
+      <tuv xml:lang="de">
+        <seg>Browser Auflösung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Browser resolution</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.Time">
+      <tuv xml:lang="de">
+        <seg>Verbindungs-Zeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Connection time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.TimeFormat">
+      <tuv xml:lang="de">
+        <seg>hh:mm:ss
+dd:MM:yyyy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>hh:mm:ss
+MM/dd/yyyy</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.PageId">
+      <tuv xml:lang="de">
+        <seg>PageId</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PageId</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Client.IsMultitouch">
+      <tuv xml:lang="de">
+        <seg>Multitouch</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Multitouch</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

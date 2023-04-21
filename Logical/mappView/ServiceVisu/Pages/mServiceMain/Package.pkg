@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.5.113 SP?>
+<Package PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Page description">mServiceMain.page</Object>
+    <Object Type="File">mServiceMainContent.content</Object>
+    <Object Type="File">mServiceSwipeMain.content</Object>
+    <Object Type="File">mStatisticContent.content</Object>
+    <Object Type="File">mServiceContent.content</Object>
+    <Object Type="File">mDocuContent.content</Object>
+    <Object Type="File">mDataContent.content</Object>
+    <Object Type="File">mRecipeContent.content</Object>
+    <Object Type="File">mLoggerContent.content</Object>
+    <Object Type="File">mChartContent.content</Object>
+    <Object Type="File">mAlarmContent.content</Object>
+  </Objects>
+</Package>

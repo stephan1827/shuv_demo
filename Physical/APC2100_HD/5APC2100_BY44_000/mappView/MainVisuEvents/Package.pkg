@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentAnimationPage.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentChartPage.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentEvent.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentEventPage.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentFavoriteWatch.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentHeader.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentKeyboard.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentLogin.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentNavigation.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentProfileGen.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentStylePage.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentThemePage.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentUseCase2.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentUseCase6.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentUseCaseBase.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\Initialization.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentUseCase9.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentFormular.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentUseCase3.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentScreenSaver.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentSystem.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuEvents\ContentDragDrop.eventbinding</Object>
+  </Objects>
+</Package>

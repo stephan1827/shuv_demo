@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentTablePage_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+
+		
+		<!-- active table binding -->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Table:myTable.TimeStamp" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTablePage" widgetRefId="TableItem1" attribute="stringValue" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Table:myTable.Message" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTablePage" widgetRefId="TableItem2" attribute="stringValue" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Table:selectedTableIndex" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTablePage" widgetRefId="Table1" attribute="selectedRow" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Table:myTable.State" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTablePage" widgetRefId="TableItem3" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Table:myTable.State" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentTablePage" widgetRefId="TableItemImageList1" attribute="selectedIndex" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>

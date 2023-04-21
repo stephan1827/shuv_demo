@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentExpressions_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="ToggleSwitch1" attribute="value" />
+			<Target xsi:type="expression" refId="myANDExpr1" attribute="inA" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="ToggleSwitch2" attribute="value" />
+			<Target xsi:type="expression" refId="myANDExpr1" attribute="inB" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="Slider1" attribute="value" />
+			<Target xsi:type="expression" refId="myANDExpr1" attribute="inC" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Expression1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="ToggleSwitch1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="Expression2" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="ToggleSwitch2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Simulation:ExpressionInC" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="Slider1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="myANDExpr1" attribute="result" />
+			<Target xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="Button1" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="myANDExpr1" attribute="result" />
+			<Target xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="Button2" attribute="enable" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="Slider1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentExpressions" widgetRefId="NumericOutput1" attribute="value" />
+		</Binding>
+		
+		
+	</Bindings>
+</BindingsSet>

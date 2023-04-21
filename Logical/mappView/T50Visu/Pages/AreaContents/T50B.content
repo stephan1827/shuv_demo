@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cT50B" height="480" width="480" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.RadialGauge" id="WPRadialGauge1" top="20" left="0" width="240" height="240" zIndex="0" text="RadialGauge1" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="WPRadialGauge2" top="20" left="260" width="160" height="160" zIndex="1" startAngle="180" text="RadialGauge2" backColorScaleArea1="rgba(255, 255, 128, 1)" style="Gauge2_to80_green" />
+    <Widget xsi:type="widgets.brease.LinearGauge" id="WPLinearGauge1" top="300" left="0" width="479" height="60" zIndex="2" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="396" left="180" width="119" height="42" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" value="33" style="InputLarge" />
+  </Widgets>
+</Content>

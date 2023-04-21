@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentFavoriteWatch_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>		
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:configurationJSON" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1" attribute="boxConfiguration"/>
+		</Binding>
+		
+		<!-- BINDING OUT VALUES -->
+			
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value1" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem1" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value2" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem2" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value3" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem3" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value4" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem4" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value5" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem5" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value6" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem6" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value7" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem7" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value8" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem8" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value9" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem9" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value10" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem10" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value11" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem11" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value12" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem12" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value13" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem13" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value14" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem14" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value15" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem15" attribute="node"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Value16" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatchItem16" attribute="node"/>
+		</Binding>
+		
+		
+	</Bindings>
+</BindingsSet>

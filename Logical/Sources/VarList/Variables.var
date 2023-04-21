@@ -1,0 +1,3 @@
+VAR
+	Color : ARRAY[0..9] OF ColorType := [(Red:=0,Green:=0,Blue:=0),(Red:=255,Green:=255,Blue:=255),(Red:=255,Green:=0,Blue:=0),(Red:=0,Green:=255,Blue:=0),(Red:=0,Green:=0,Blue:=255),(Red:=255,Green:=255,Blue:=0),(Red:=240,Green:=255,Blue:=255),(Red:=186,Green:=85,Blue:=211),(Red:=255,Green:=133,Blue:=0),(Red:=192,Green:=192,Blue:=192)];
+END_VAR

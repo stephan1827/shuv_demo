@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="mService_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+    
+    	<!--set specific content by buttons-->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="contentSwipeId" event="ValueChanged" />
+			<EventHandler condition="newValue=0">
+				<Action>
+					<Target xsi:type="widgets.brease.ContentCarousel.Action" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" >
+						<Method xsi:type="widgets.brease.ContentCarousel.Action.SetSelectedValue" selectedValue="mStatisticContent" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=1">
+				<Action>
+					<Target xsi:type="widgets.brease.ContentCarousel.Action" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" >
+						<Method xsi:type="widgets.brease.ContentCarousel.Action.SetSelectedValue" selectedValue="mServiceContent" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=2">
+				<Action>
+					<Target xsi:type="widgets.brease.ContentCarousel.Action" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" >
+						<Method xsi:type="widgets.brease.ContentCarousel.Action.SetSelectedValue" selectedValue="mDocuContent" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=3">
+				<Action>
+					<Target xsi:type="widgets.brease.ContentCarousel.Action" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" >
+						<Method xsi:type="widgets.brease.ContentCarousel.Action.SetSelectedValue" selectedValue="mDataContent" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=4">
+				<Action>
+					<Target xsi:type="widgets.brease.ContentCarousel.Action" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" >
+						<Method xsi:type="widgets.brease.ContentCarousel.Action.SetSelectedValue" selectedValue="mRecipeContent" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=5">
+				<Action>
+					<Target xsi:type="widgets.brease.ContentCarousel.Action" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" >
+						<Method xsi:type="widgets.brease.ContentCarousel.Action.SetSelectedValue" selectedValue="mLoggerContent" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=6">
+				<Action>
+					<Target xsi:type="widgets.brease.ContentCarousel.Action" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" >
+						<Method xsi:type="widgets.brease.ContentCarousel.Action.SetSelectedValue" selectedValue="mChartContent" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=7">
+				<Action>
+					<Target xsi:type="widgets.brease.ContentCarousel.Action" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" >
+						<Method xsi:type="widgets.brease.ContentCarousel.Action.SetSelectedValue" selectedValue="mAlarmContent" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!--react on content swipe - update button bar-->
+		
+		<EventBinding>
+			<Source xsi:type="widgets.brease.ContentCarousel.Event" contentRefId="mServiceSwipeMain" widgetRefId="ContentCarousel1" event="SelectedValueChanged" />
+			<EventHandler condition="newValue = &quot;mStatisticContent&quot;">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="contentSwipeId" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;mServiceContent&quot;">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="contentSwipeId" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="1" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;mDocuContent&quot;">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="contentSwipeId" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="2" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;mDataContent&quot;">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="contentSwipeId" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="3" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;mRecipeContent&quot;">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="contentSwipeId" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="4" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;mLoggerContent&quot;">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="contentSwipeId" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="5" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;mChartContent&quot;">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="contentSwipeId" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="6" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;mAlarmContent&quot;">
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="contentSwipeId" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="7" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		<!-- **********************************************************
+		* source templates => copy them to your EventBinding Source
+		* change elements to your requirements
+		* for further possible Events refer to help system
+		********************************************************** -->
+		<!--<Source xsi:type="opcUa.Event" refId="::Program:boolVariableEvent" event="ValueChanged" />-->
+
+		<!--<Source xsi:type="session.Event" refId="sessionVariable" event="ValueChanged" />-->
+
+		<!--<Source xsi:type="widgets.brease.Button.Event" contentRefId="Content1" widgetRefId="Button1" event="Click" />-->
+
+		<!-- **********************************************************
+		* target templates => copy them to your EventBinding Action
+		* change elements to your requirements 
+		* for further possible Actions refer to help system
+		********************************************************** -->
+		<!--<Target xsi:type="opcUa.NodeAction" refId="::Program:Variable1" >
+		<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="37.1" />
+		</Target>-->
+
+		<!--<Target xsi:type="session.VariableAction" refId="Variable1" >
+		<Method xsi:type="session.VariableAction.SetValueNumber" value="4.8" />
+		</Target>-->
+
+		<!--<Target xsi:type="clientSystem.Action">
+		<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="dialog1" mode="modal" />
+		</Target>-->
+
+		<!--<Target xsi:type="clientSystem.Action">
+		<Method xsi:type="clientSystem.Action.Navigate" pageId="Page1" />
+		</Target>-->
+
+		<!--<Target xsi:type="widgets.brease.Button.Action" contentRefId="Content1" widgetRefId="Button1" >
+		<Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+		</Target>-->
+
+		<!--<Target xsi:type="clientSystem.Action">
+		<Method xsi:type="clientSystem.Action.ShowMessageBox" type="OKCancel" message="Messagetext" header="Warning!" icon="Warning"  />
+		</Target>
+		<Result>
+		<ResultHandler condition="result = 4">
+				
+		</ResultHandler>
+		</Result>-->
+
+	</Bindings>
+</EventBindingSet>

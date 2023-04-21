@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.195?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="5APC2100_BY44_000" Type="5APC2100.BY44-000" Version="1.2.3.0">
+    <Connector Name="IF3">
+      <Parameter ID="ActivateDevice" Value="1" />
+    </Connector>
+    <Connector Name="IF4">
+      <Parameter ID="ActivateDevice" Value="1" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="mvHighlight_5_0_APC2100" />
+    <Parameter ID="Simulation" Value="1" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+  </Module>
+</Hardware>

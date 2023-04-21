@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="mRecipeContent" height="618" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="278" left="296" width="433" height="62" zIndex="0" text="implementation of mappRecipeX" textAlign="center" rotation="-30deg" fontSize="24px" bold="true" />
+  </Widgets>
+</Content>

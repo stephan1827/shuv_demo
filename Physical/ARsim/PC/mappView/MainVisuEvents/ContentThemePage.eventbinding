@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EventBindingSet id="ContentThemePage_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+	
+		<!--from ThemePage to NavigationPage -->
+		<EventBinding id="ContentThemePage.NavigationHome.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentThemePage" widgetRefId="NavigationHome" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="DayNightTheme" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		
+		<!-- session variable change navigates and change theme -->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="DayNightTheme" event="ValueChanged" />
+			<EventHandler condition="newValue=0">
+				<Parallel>
+					<Action>
+						<Target xsi:type="clientSystem.Action">
+							<Method xsi:type="clientSystem.Action.ChangeTheme" theme="BuRTheme1"   />
+						</Target> 
+					</Action>
+					<Action>
+						<Target xsi:type="clientSystem.Action">
+							<Method xsi:type="clientSystem.Action.Navigate" pageId="NavigationPage"  />
+						</Target> 
+					</Action>
+				</Parallel>
+			</EventHandler>
+			<EventHandler condition="newValue=1">
+				<Parallel>
+					<Action>
+						<Target xsi:type="clientSystem.Action">
+							<Method xsi:type="clientSystem.Action.ChangeTheme" theme="DayTheme"   />
+						</Target> 
+					</Action>
+					<Action>
+						<Target xsi:type="clientSystem.Action">
+							<Method xsi:type="clientSystem.Action.Navigate" pageId="ThemePage"  />
+						</Target> 
+					</Action>
+				</Parallel>
+			</EventHandler>
+			<EventHandler condition="newValue=2">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.ChangeTheme" theme="NightTheme"   />
+					</Target> 
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=3">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.ChangeTheme" theme="DayTheme"   />
+					</Target> 
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		
+		
+		<!--change between day and night theme-->
+		<EventBinding id="ContentThemePage.CheckBox1.Click">
+			<Source xsi:type="widgets.brease.CheckBox.Event" contentRefId="ContentThemePage" widgetRefId="CheckBox1" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="DayNight" >
+						<Method xsi:type="session.VariableAction.ToggleValueBool"  />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="DayNight" event="ValueChanged" />
+			<EventHandler condition="NOT newValue">
+			
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="DayNightTheme">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="3"   />
+					</Target> 
+				</Action>
+			
+			</EventHandler>
+			
+			<EventHandler condition="newValue">
+				
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="DayNightTheme">
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="2"   />
+					</Target> 
+				</Action>
+			
+			</EventHandler>
+		</EventBinding>
+		
+	
+		<!--service1-->
+		<EventBinding id="ContentThemePage.Label1.Click">
+			<Source xsi:type="widgets.brease.Label.Event" contentRefId="ContentThemePage" widgetRefId="Label1" event="Click" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label1" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheckSelected"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label2" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label3" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label4" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label5" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<!--and variable for image list-->
+					<Action>
+						<Target xsi:type="session.VariableAction" refId="ServiceSelect" >
+							<Method xsi:type="session.VariableAction.SetValueNumber" value="1" />
+						</Target>
+					</Action>
+
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--service2-->
+		<EventBinding id="ContentThemePage.Label2.Click">
+			<Source xsi:type="widgets.brease.Label.Event" contentRefId="ContentThemePage" widgetRefId="Label2" event="Click" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label2" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheckSelected"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label1" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label3" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label4" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label5" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					
+					<!--and variable for image list-->
+					<Action>
+						<Target xsi:type="session.VariableAction" refId="ServiceSelect" >
+							<Method xsi:type="session.VariableAction.SetValueNumber" value="2" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--service3-->
+		<EventBinding id="ContentThemePage.Label3.Click">
+			<Source xsi:type="widgets.brease.Label.Event" contentRefId="ContentThemePage" widgetRefId="Label3" event="Click" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label3" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheckSelected"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label1" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label2" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label4" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label5" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					
+					<!--and variable for image list-->
+					<Action>
+						<Target xsi:type="session.VariableAction" refId="ServiceSelect" >
+							<Method xsi:type="session.VariableAction.SetValueNumber" value="3" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--service4-->
+		<EventBinding id="ContentThemePage.Label4.Click">
+			<Source xsi:type="widgets.brease.Label.Event" contentRefId="ContentThemePage" widgetRefId="Label4" event="Click" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label4" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheckSelected"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label1" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label2" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label3" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label5" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					
+					<!--and variable for image list-->
+					<Action>
+						<Target xsi:type="session.VariableAction" refId="ServiceSelect" >
+							<Method xsi:type="session.VariableAction.SetValueNumber" value="4" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--service5-->
+		<EventBinding id="ContentThemePage.Label5.Click">
+			<Source xsi:type="widgets.brease.Label.Event" contentRefId="ContentThemePage" widgetRefId="Label5" event="Click" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label5" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheckSelected"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label1" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label2" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label3" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentThemePage" widgetRefId="Label4" >
+							<Method xsi:type="widgets.brease.Label.Action.SetStyle" value="StatusCheck"/>
+						</Target>
+					</Action>
+					
+					<!--and variable for image list-->
+					<Action>
+						<Target xsi:type="session.VariableAction" refId="ServiceSelect" >
+							<Method xsi:type="session.VariableAction.SetValueNumber" value="5" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		
+		
+  </Bindings>
+</EventBindingSet>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.195?>
+<Package PackageType="mappViewPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="Layouts">Layouts</Object>
+    <Object Type="Package" Description="Widgets">Widgets</Object>
+    <Object Type="Package" Description="Resources">Resources</Object>
+    <Object Type="Package">MainVisu</Object>
+    <Object Type="Package">ServiceVisu</Object>
+    <Object Type="Package">T50Visu</Object>
+    <Object Type="Package">T30Visu</Object>
+    <Object Type="Package">SmartVisu</Object>
+  </Objects>
+</Package>

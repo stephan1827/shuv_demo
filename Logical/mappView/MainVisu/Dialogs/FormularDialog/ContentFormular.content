@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentFormular" height="600" width="800" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput1" top="100" left="40" width="300" height="30" zIndex="0" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="160" left="40" width="140" height="30" zIndex="1" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="160" left="200" width="140" height="30" zIndex="2" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput3" top="200" left="40" width="140" height="30" zIndex="3" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput4" top="200" left="200" width="140" height="30" zIndex="4" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput2" top="260" left="40" width="300" height="30" zIndex="5" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput3" top="300" left="40" width="300" height="30" zIndex="6" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput4" top="340" left="40" width="300" height="30" zIndex="7" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput5" top="380" left="40" width="300" height="30" zIndex="8" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput6" top="420" left="40" width="300" height="30" zIndex="9" keyboard="false" submitOnChange="false" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonSubmit" top="520" left="360" width="100" height="50" zIndex="10" text="Submit" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="100" left="440" width="300" height="30" zIndex="11" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="40" left="40" width="300" height="30" zIndex="12" text="$IAT/Formular/EnterValues" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="40" left="440" width="300" height="30" zIndex="13" text="$IAT/Formular/SumittedValues" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput2" top="260" left="440" width="300" height="30" zIndex="14" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput3" top="300" left="440" width="300" height="30" zIndex="15" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput4" top="340" left="440" width="300" height="30" zIndex="16" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput5" top="380" left="440" width="300" height="30" zIndex="17" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput6" top="420" left="440" width="300" height="30" zIndex="18" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="160" left="440" width="140" height="30" zIndex="19" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput2" top="160" left="600" width="140" height="30" zIndex="20" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput3" top="200" left="440" width="140" height="30" zIndex="21" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="200" left="600" width="140" height="30" zIndex="22" />
+  </Widgets>
+</Content>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="smartSDMContent" height="660" width="414" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="0" left="0" width="114" height="44" zIndex="0" image="Media/SVGsymbols/Arrow/ArrowLeft.svg" pageId="SmartMainPage" text="Back" imageColor="rgba(0, 0, 255, 1)" textColor="rgba(0, 0, 255, 1)" fontSize="16px" bold="false" style="transparent" />
+    <Widget xsi:type="widgets.brease.WebViewer" id="WebViewer1" top="58" left="5" width="402" height="290" zIndex="1" />
+  </Widgets>
+</Content>

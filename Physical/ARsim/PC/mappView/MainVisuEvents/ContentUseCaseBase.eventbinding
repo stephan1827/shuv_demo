@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EventBindingSet id="ContentUseCaseBase_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2"
+	xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<!-- use case page navigation with TextPicker widget -->
+		
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="SelectIndexUseCasePage" event="ValueChanged" />
+			<EventHandler condition="newValue = &quot;0&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase1" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;1&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase2" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;2&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase3" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;3&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase4" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;4&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase5" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;5&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase6" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;6&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase7" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;7&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase8" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue = &quot;8&quot;">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="ContentUseCase9" areaId="LoadContent" pageId="UseCasePage" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+
+	</Bindings>
+</EventBindingSet>

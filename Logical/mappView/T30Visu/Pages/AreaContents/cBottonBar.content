@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cBottonBarT30" height="115" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="13" left="40" width="920" height="94" zIndex="0" childPositioning="relative">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NavigationButton" id="bNavigation1" top="7" left="8" width="139" height="75" zIndex="0" image="Media/SVGsymbols/Symbols/Tool.svg" imageAlign="top" pageId="pWidgetsT30" imageHeight="64" imageWidth="64" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 133, 0, 1)" borderWidth="2px 2px 2px 2px" cornerRadius="15px" backColor="rgba(255, 255, 255, 0)" textAlign="center" bold="true" margin="2px 15px 0px 4px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="bGauges1" top="7" left="3" width="139" height="75" zIndex="1" image="Media/SVGsymbols/Symbols/Max.svg" imageAlign="top" pageId="pGaugesT30" imageHeight="64" imageWidth="64" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 133, 0, 1)" borderWidth="2px 2px 2px 2px" cornerRadius="15px" backColor="rgba(255, 255, 255, 0)" textAlign="center" bold="true" margin="2px 15px 0px 0px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="bTouch1" top="7" left="3" width="139" height="75" zIndex="2" image="Media/SVGsymbols/Symbols/TouchMe.svg" imageAlign="top" pageId="pTouchT30" imageHeight="64" imageWidth="64" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 133, 0, 1)" borderWidth="2px 2px 2px 2px" cornerRadius="15px" backColor="rgba(255, 255, 255, 0)" textAlign="center" bold="true" margin="2px 15px 0px 0px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="bTouch3" top="7" left="0" width="139" height="75" zIndex="3" image="Media/SVGsymbols/Symbols/Graph.svg" imageAlign="top" pageId="pCharT30" imageHeight="64" imageWidth="64" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 133, 0, 1)" borderWidth="2px 2px 2px 2px" cornerRadius="15px" backColor="rgba(255, 255, 255, 0)" textAlign="center" bold="true" margin="2px 15px 0px 0px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="bTouch2" top="7" left="0" width="130" height="75" zIndex="4" image="Media/SVGsymbols/Misc/internet.svg" imageAlign="top" pageId="pStyleT30" imageHeight="64" imageWidth="64" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 133, 0, 1)" borderWidth="2px 2px 2px 2px" cornerRadius="15px" backColor="rgba(255, 255, 255, 0)" textAlign="center" bold="true" margin="2px 15px 0px 0px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="bTouch4" top="7" left="0" width="130" height="75" zIndex="5" image="Media/SVGsymbols/Misc/table.svg" imageAlign="top" pageId="pTableT30" imageHeight="64" imageWidth="64" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 133, 0, 1)" borderWidth="2px 2px 2px 2px" cornerRadius="15px" backColor="rgba(255, 255, 255, 0)" textAlign="center" bold="true" margin="2px 15px 0px 0px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="1" x1="40" x2="980" y1="3" y2="3" lineCap="square" style="Solid_Orange_Wide" />
+  </Widgets>
+</Content>

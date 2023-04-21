@@ -1,0 +1,13 @@
+VAR
+	valueCel : REAL;
+	valuemm : REAL;
+	minLimit : REAL;
+	maxLimit : REAL;
+	userLimitValue : INT;
+	indicateStyle : BOOL;
+	ExpressionInC : REAL;
+	myTestBool : BOOL;
+	myTestInt : INT;
+	X : INT;
+	Y : INT;
+END_VAR

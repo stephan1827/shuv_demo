@@ -1,0 +1,27 @@
+VAR
+	Y : ARRAY[0..4] OF REAL := [100,50,10,100,0];
+	Y2 : ARRAY[0..4] OF REAL := [50,75,20,30,80];
+	X : ARRAY[0..4] OF REAL := [500,400,300,200,100];
+	X2 : ARRAY[0..4] OF REAL := [500,350,250,150,50];
+	configurationJSON : STRING[10000];
+	Value1 : REAL;
+	Value2 : REAL;
+	Value3 : REAL;
+	Value4 : REAL;
+	Value5 : REAL;
+	Value6 : REAL;
+	Value7 : REAL;
+	Value8 : REAL;
+	Value9 : REAL;
+	Value10 : REAL;
+	Value11 : REAL;
+	Value12 : REAL;
+	Value13 : REAL;
+	Value14 : REAL;
+	Value15 : REAL;
+	Value16 : REAL;
+	Value17 : REAL;
+	Value18 : REAL;
+	Value19 : REAL;
+	Value20 : REAL;
+END_VAR

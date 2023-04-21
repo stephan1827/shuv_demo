@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentClientInfo_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+		<!-- visibility of groupbox ClientPage -->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].IsValid" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="gpClient0" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].IsValid" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="gpClient1" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].IsValid" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="gpClient2" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].IsValid" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="gpClient3" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].IsValid" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="gpClient4" attribute="visible" />
+		</Binding>
+		
+		<!--bind opc ua values to ClientInfoPage-->
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].IpAddress" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputIP0" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].UserId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUser0" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].LanguageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputLang0" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].MeasurementSystemId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUnit0" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].ScreenResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputScreen0" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].BrowserResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputBrowser0" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].ConnectionDateTime" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="DateTimeOutput0" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].currentPageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputPage0" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[0].isMultiTouch" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="CheckBoxTouch0" attribute="value" />
+		</Binding>
+		
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].IpAddress" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputIP1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].UserId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUser1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].LanguageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputLang1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].MeasurementSystemId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUnit1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].ScreenResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputScreen1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].BrowserResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputBrowser1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].ConnectionDateTime" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="DateTimeOutput1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].currentPageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputPage1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[1].isMultiTouch" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="CheckBoxTouch1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].IpAddress" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputIP2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].UserId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUser2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].LanguageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputLang2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].MeasurementSystemId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUnit2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].ScreenResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputScreen2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].BrowserResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputBrowser2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].ConnectionDateTime" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="DateTimeOutput2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].currentPageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputPage2" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[2].isMultiTouch" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="CheckBoxTouch2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].IpAddress" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputIP3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].UserId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUser3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].LanguageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputLang3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].MeasurementSystemId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUnit3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].ScreenResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputScreen3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].BrowserResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputBrowser3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].ConnectionDateTime" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="DateTimeOutput3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].currentPageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputPage3" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[3].isMultiTouch" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="CheckBoxTouch3" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].IpAddress" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputIP4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].UserId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUser4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].LanguageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputLang4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].MeasurementSystemId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputUnit4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].ScreenResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputScreen4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].BrowserResolution" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputBrowser4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].ConnectionDateTime" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="DateTimeOutput4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].currentPageId" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="TextOutputPage4" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mvClient:clientSlots[4].isMultiTouch" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentClientInfo" widgetRefId="CheckBoxTouch4" attribute="value" />
+		</Binding>
+		
+	
+	</Bindings>
+</BindingsSet>

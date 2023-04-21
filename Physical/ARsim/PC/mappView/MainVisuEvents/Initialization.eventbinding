@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="Initialization_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+    
+		<!--get OPC UA server state-->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.isValid" event="ValueChanged" />
+			<Operand name="serverStatus" datatype="ANY_INT">
+				<ReadTarget xsi:type="opcUa.SystemAction.Read"  >
+					<Method xsi:type="opcUa.SystemAction.GetServerStatus" />
+				</ReadTarget>
+			</Operand>
+			<EventHandler condition="serverStatus &gt; 0">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.ShowMessageBox" type="OK" message="No connection to OPC UA server" header="Warning!" icon="Warning"  />
+					</Target>
+				</Action>
+			</EventHandler>
+			<!--<EventHandler condition="serverStatus = 0">
+			<Action>
+			... implementation of initialization
+			</Action>
+			</EventHandler>-->
+		</EventBinding>
+
+		<!--screen saver function-->
+		
+		<!--any click restarts the session timer-->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.activityCount" event="ValueChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="session.TimerAction" refId="ScreenSaverTimer" >
+						<Method xsi:type="session.TimerAction.Start" />
+					</Target>	
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--when the timer elapsed the ScreenSaverPage is displayed-->
+		<EventBinding>
+			<Source xsi:type="session.Timer.Event" refId="ScreenSaverTimer" event="Elapsed" />
+			<Operand name="GetCurrentPageId" datatype="ANY_STRING">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="::SYSTEM:clientInfo.currentPageId" >
+					<Method xsi:type="session.VariableAction.GetValue" />
+				</ReadTarget>
+			</Operand>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="session.VariableAction" refId="LastPageBeforeScreenSaver" >
+								<Method xsi:type="session.VariableAction.SetValueString" value="=GetCurrentPageId" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="clientSystem.Action">
+								<Method xsi:type="clientSystem.Action.Navigate" pageId="ScreenSaverPage" />
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+
+
+			
+	</Bindings>
+</EventBindingSet>

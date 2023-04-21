@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">ContentHeaderNavigation.binding</Object>
+    <Object Type="File">ContentMainPage.binding</Object>
+    <Object Type="File">ContentNavigation.binding</Object>
+    <Object Type="File">ContentControl.binding</Object>
+    <Object Type="File">ContentSimple.binding</Object>
+    <Object Type="File">ContentContainer.binding</Object>
+    <Object Type="File">ContentGraphic.binding</Object>
+    <Object Type="File">ContentUserLimit.binding</Object>
+    <Object Type="File">ContentEventPage.binding</Object>
+    <Object Type="File">ContentClientInfo.binding</Object>
+    <Object Type="File">ContentTablePage.binding</Object>
+    <Object Type="File">ContentUnitsPage.binding</Object>
+    <Object Type="File">ContentExpressions.binding</Object>
+    <Object Type="File">ContentVarList.binding</Object>
+    <Object Type="File">ContentStylePage.binding</Object>
+    <Object Type="File">ContentKeyboard.binding</Object>
+    <Object Type="File">ContentChartPage.binding</Object>
+    <Object Type="File">ContentFavoriteWatch.binding</Object>
+    <Object Type="File">ContentProfileGen.binding</Object>
+    <Object Type="File">ContentAnimationPage.binding</Object>
+    <Object Type="File">ContentUseCaseBase.binding</Object>
+    <Object Type="File">ContentUseCase1.binding</Object>
+    <Object Type="File">ContentUseCase3.binding</Object>
+    <Object Type="File">ContentUseCase4.binding</Object>
+    <Object Type="File">ContentUseCase5.binding</Object>
+    <Object Type="File">ContentUseCase6.binding</Object>
+    <Object Type="File">ContentUseCase7.binding</Object>
+    <Object Type="File">ContentUseCase8.binding</Object>
+    <Object Type="File">gSystemInfo.binding</Object>
+    <Object Type="File">ContentFormular.binding</Object>
+    <Object Type="File">BindingList.bindinglist</Object>
+  </Objects>
+</Package>

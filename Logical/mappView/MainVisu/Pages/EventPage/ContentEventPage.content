@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentEventPage" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="286" left="-85" width="300" height="110" zIndex="0" multiLine="true" text="$Page.Event" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="1" image="Media/SVGsymbols/Symbols/TouchMe.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonMsgBox" top="200" left="200" width="200" height="60" zIndex="2" multiLine="true" text="$Event.MsgBox" wordWrap="true" style="Operate" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDialogModal" top="300" left="200" width="200" height="60" zIndex="3" multiLine="true" text="$Event.DialogModal" wordWrap="true" style="Operate" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDialogModeless" top="400" left="200" width="200" height="60" zIndex="4" multiLine="true" text="$Event.DialogModeless" wordWrap="true" style="Operate" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageListEngine" top="180" left="600" width="100" height="100" zIndex="78" imageList="['Engine.svg', 'EngineMove.svg']" imagePrefix="Media/ImageList/Engine/" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDialogMultitouch" top="501" left="200" width="200" height="60" zIndex="79" multiLine="true" text="$IAT/Event.DialogMultitouch" wordWrap="true" style="Operate" />
+  </Widgets>
+</Content>

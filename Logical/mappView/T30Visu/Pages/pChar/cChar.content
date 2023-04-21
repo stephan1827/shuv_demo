@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cCharT30" height="485" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.BarChart" id="BarChart1" top="100" left="100" width="600" height="370" zIndex="0" textColor="rgba(0, 0, 0, 1)" fontSize="22px" borderStyle="none">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem1" zIndex="0" text="BarChartItem1" borderWidth="0px" backColor="rgba(0, 51, 204, 1)" fontSize="22px" />
+        <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem2" zIndex="1" text="BarChartItem2" borderWidth="0px" fontSize="22px" />
+        <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem3" zIndex="2" text="BarChartItem3" borderWidth="0px" backColor="rgba(255, 0, 0, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="22px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="28" left="40" width="940" height="50" zIndex="1" text="Bar Chart" borderWidth="0px 0px 4px 0px" borderColor="rgba(255, 136, 0, 1)" borderStyle="solid" textAlign="left" fontSize="30px" padding="0px 0px 0px 0px" margin="0px" style="TitelLabel" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="180" left="740" width="180" height="60" zIndex="2" useDigitGrouping="false" value="20" borderWidth="2px 2px 2px 6px" activeBorderWidth="0px 0px 0px 6px" disabledBorderWidth="0px 0px 0px 6px" borderColor="rgba(0, 51, 204, 1)" disabledBorderColor="rgba(255, 255, 255, 1)" activeBorderColor="rgba(255, 255, 255, 1)" activeBackColor="rgba(255, 255, 255, 1)" fontSize="22px" shadow="none" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="260" left="740" width="180" height="60" zIndex="3" value="50" borderWidth="2px 2px 2px 6px" borderColor="rgba(255, 137, 0, 1)" fontSize="22px" unitFontSize="22px" shadow="none" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput3" top="340" left="740" width="180" height="60" zIndex="4" value="70" borderWidth="2px 2px 2px 6px" borderColor="rgba(255, 0, 0, 1)" fontSize="22px" shadow="none" />
+  </Widgets>
+</Content>

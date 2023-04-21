@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/Theme</prop>
+  </header>
+  <body>
+    <tu tuid="mobile.BrakeFluid">
+      <tuv xml:lang="de">
+        <seg>Bremsflüssigkeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Brake fluid</seg>
+      </tuv>
+    </tu>
+    <tu tuid="mobile.BrakePadsFront">
+      <tuv xml:lang="de">
+        <seg>Bremsen Vorne</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Front brake pads</seg>
+      </tuv>
+    </tu>
+    <tu tuid="mobile.BrakePads">
+      <tuv xml:lang="de">
+        <seg>Bremsen Hinten</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Rear brake pads</seg>
+      </tuv>
+    </tu>
+    <tu tuid="mobile.EngineOil">
+      <tuv xml:lang="de">
+        <seg>Motoröl</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Engine oil</seg>
+      </tuv>
+    </tu>
+    <tu tuid="mobile.Inspection">
+      <tuv xml:lang="de">
+        <seg>Fahrzeuginspektion</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Vehicle inspection</seg>
+      </tuv>
+    </tu>
+    <tu tuid="mobile.Fail">
+      <tuv xml:lang="de">
+        <seg>NOK</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>FAIL</seg>
+      </tuv>
+    </tu>
+    <tu tuid="mobile.Day">
+      <tuv xml:lang="de">
+        <seg>Nacht Modus</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>
+Night mode</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

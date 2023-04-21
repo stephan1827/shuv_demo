@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.4.4.79?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">smartMainContent.binding</Object>
+    <Object Type="File">SmartEventBinding.eventbinding</Object>
+    <Object Type="File">smartGraphContent.binding</Object>
+    <Object Type="File">smartEditContent.binding</Object>
+  </Objects>
+</Package>

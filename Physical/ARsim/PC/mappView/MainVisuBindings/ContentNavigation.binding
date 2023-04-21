@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentNavigation_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+		<!--visibility of navigation buttons-->
+		
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp1" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App2" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp2" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App3" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp3" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp4" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App5" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp5" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App6" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp6" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App7" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp7" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App8" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp8" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App9" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp9" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App10" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp10" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App11" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp11" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App12" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp12" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App13" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp13" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App14" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp14" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App15" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp15" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App16" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp16" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App17" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp17" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App18" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp18" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App19" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp19" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App20" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp20" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="App21" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentNavigation" widgetRefId="NavigationApp21" attribute="visible" />
+		</Binding>
+		
+		
+
+
+
+	</Bindings>
+</BindingsSet>

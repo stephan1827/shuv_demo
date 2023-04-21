@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="mDataContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Table:myTable.TimeStamp" attribute="value" />
+			<Target xsi:type="brease" contentRefId="mDataContent" widgetRefId="TableItem1" attribute="stringValue" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Table:myTable.Message" attribute="value" />
+			<Target xsi:type="brease" contentRefId="mDataContent" widgetRefId="TableItem2" attribute="stringValue" />
+		</Binding>
+  	
+	</Bindings>
+</BindingsSet>

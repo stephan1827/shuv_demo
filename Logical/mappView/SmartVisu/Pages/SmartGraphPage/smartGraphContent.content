@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="smartGraphContent" height="660" width="414" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="0" left="0" width="114" height="44" zIndex="0" image="Media/SVGsymbols/Arrow/ArrowLeft.svg" pageId="SmartMainPage" text="Back" imageColor="rgba(0, 0, 255, 1)" textColor="rgba(0, 0, 255, 1)" fontSize="16px" bold="false" style="transparent" />
+    <Widget xsi:type="widgets.brease.LineChart" id="LineChart1" top="43" left="4" width="419" height="297" zIndex="1" chartBorderColor="rgba(0, 0, 0, 0)" borderStyle="none">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.LineChartIndexAxis" id="LineChartIndexAxis1" height="30" zIndex="0">
+          <Widgets />
+        </Widget>
+        <Widget xsi:type="widgets.brease.LineChartYAxis" id="LineChartYAxis1" width="40" zIndex="1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.LineChartGraph" id="LineChartGraph1" zIndex="0" xAxisRefId="LineChartIndexAxis1" lineColor="rgba(49, 130, 189, 1)" fillColor="rgba(49, 130, 189, 0.5)" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonZoomReset" top="7" left="369" width="40" height="40" zIndex="2" image="Media/SVGsymbols/Symbols/Restart.svg" imageColor="rgba(49, 130, 189, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" borderStyle="none" backColor="rgba(255, 255, 255, 0)" />
+    <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChart1" top="349" left="4" width="419" height="297" zIndex="3" chartBorderColor="rgba(0, 0, 0, 0)" borderStyle="none">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis1" height="40" zIndex="0" format="hh:mm:ss">
+          <Widgets />
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis1" width="40" zIndex="1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph1" zIndex="0" maxValue="150" xAxisRefId="OnlineChartTimeAxis1" lineColor="rgba(0, 192, 0, 1)" lineWidth="1px" fillColor="rgba(0, 192, 0, 0.5)" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentExpressions" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="270" left="-151" width="388" height="55" zIndex="0" multiLine="true" text="$Page.Expression" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="1" image="Media/SVGsymbols/Misc/calculator.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.Button" id="Button1" top="599" left="229" width="169" height="79" zIndex="80" multiLine="true" text="$IAT/Expression/ResultBindingV" wordWrap="true" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="Button2" top="599" left="461" width="169" height="79" zIndex="81" multiLine="true" text="$IAT/Expression/ResultBindingE" wordWrap="true" style="Command" />
+    <Widget xsi:type="widgets.brease.Label" id="Label14" top="58" left="229" width="668" height="98" zIndex="82" ellipsis="true" multiLine="true" text="$IAT/Expression/Info" wordWrap="true" style="Caption" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="185" left="229" width="732" height="369" zIndex="83" text="$IAT/Expression/ExpressionOverview">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="234" left="348" width="112" height="30" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" fontSize="24px" padding="0px 5px 0px 5px" />
+        <Widget xsi:type="widgets.brease.BasicSlider" id="Slider1" top="224" left="137" width="200" height="50" zIndex="1" thumbSize="30px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="36" left="429" width="61" height="30" zIndex="2" text="AND" fontSize="20px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label13" top="234" left="20" width="102" height="30" zIndex="3" text="inC" fontSize="20px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="36" left="137" width="52" height="30" zIndex="4" text="inA" fontSize="20px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="36" left="311" width="52" height="30" zIndex="5" text="inB" fontSize="20px" bold="true" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="132" left="137" width="108" height="30" zIndex="6" mouseDownText="true" text="false" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch2" top="184" left="137" width="108" height="30" zIndex="7" mouseDownText="true" text="false" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="36" left="583" width="70" height="30" zIndex="8" text="[REAL]" textColor="rgba(192, 192, 255, 1)" fontSize="16px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label11" top="134" left="20" width="52" height="30" zIndex="9" text="inA" fontSize="20px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="36" left="492" width="102" height="30" zIndex="10" text="inC &gt; 30" fontSize="20px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="36" left="20" width="109" height="30" zIndex="11" text="$IAT/Expression/Expression.Result" fontSize="20px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="36" left="179" width="70" height="30" zIndex="12" text="[BOOL]" textColor="rgba(192, 192, 255, 1)" fontSize="16px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="36" left="356" width="70" height="30" zIndex="13" text="[BOOL]" textColor="rgba(192, 192, 255, 1)" fontSize="16px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label12" top="184" left="20" width="52" height="30" zIndex="14" text="inB" fontSize="20px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label15" top="36" left="250" width="61" height="30" zIndex="15" text="AND" fontSize="20px" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

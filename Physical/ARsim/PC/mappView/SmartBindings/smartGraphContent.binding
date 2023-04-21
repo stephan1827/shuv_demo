@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="smartGraphContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartGraphContent" widgetRefId="LineChartGraph1" attribute="value" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Chart:graphValue[2]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="smartGraphContent" widgetRefId="OnlineChartGraph1" attribute="value" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>

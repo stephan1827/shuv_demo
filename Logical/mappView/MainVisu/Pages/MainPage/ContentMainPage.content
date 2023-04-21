@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentMainPage" height="900" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationWithoutLogin" top="339" left="207" width="341" height="38" zIndex="2" pageId="NavigationPage" text="$Page.NoLogin" textColor="rgba(255, 255, 255, 1)" textAlign="left" fontSize="18px" style="transparent" />
+    <Widget xsi:type="widgets.brease.LoginButton" id="LoginButton" top="264" left="207" width="160" height="40" zIndex="3" image="Media/SVGSymbols/User/Login.svg" text="$Page.Login" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" textAlign="left" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInputLogin" top="144" left="210" width="154" zIndex="4" placeholder="user name" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.Password" id="PasswordLogin" top="199" left="212" width="150" zIndex="5" placeholder="password" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="59" left="210" width="174" height="50" zIndex="6" textColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="59" left="73" width="57" height="50" zIndex="7" image="Media/SVGSymbols/User/User.svg" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="264" left="388" width="160" height="40" zIndex="8" pageId="NavigationPage" text="$Page.Continue" cornerRadius="8px" permissionView="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="144" left="73" width="137" zIndex="9" text="$Page.UserName" textColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="199" left="73" width="137" zIndex="10" text="$Page.Password" textColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="43" left="46" width="521" height="345" zIndex="1" style="LoginBackground" />
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="11" x1="47" x2="564" y1="122" y2="122" lineColor="rgba(255, 255, 255, 1)" opacity="0.5" style="Solid_LightGray_Wide" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="827" left="34" width="514" height="38" zIndex="12" text="mapp View Sample" textColor="rgba(255, 255, 255, 1)" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="Button1" top="0" left="0" width="100%" height="100%" zIndex="0" pageId="NavigationPage" style="transparent" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput1" top="831" left="827" width="71" zIndex="13" value="MainVisu" visible="false" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="763" left="827" width="239" height="68" zIndex="14" multiLine="true" text="// work arround to set a session variable with the name of the visuId" wordWrap="true" textColor="rgba(0, 192, 0, 1)" visible="false" />
+  </Widgets>
+</Content>

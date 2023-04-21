@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ddef:Dialog id="EventDialogT30" 
+	layoutRefId="WideDialogT30"  
+	displayName="Maschine"
+	xmlns:ddef="http://www.br-automation.com/iat2015/dialogDefinition/v2">
+	<Assignments>
+		<Assignment type="Content" baseContentRefId="ContentEventT30" areaRefId="AreaDialogSmall" />
+	</Assignments>
+</ddef:Dialog>

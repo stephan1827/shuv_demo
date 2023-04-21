@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentChartPage" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="279" left="-151" width="388" height="55" zIndex="1" multiLine="true" text="$Page.Chart" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="2" image="Media/SVGsymbols/Symbols/Graph.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="100" left="200" width="1200" height="661" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="2" width="200" height="45" zIndex="0" image="Media/SVGsymbols/DateTime/Clock.svg" text="Online Chart" mouseDownImageColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChart1" top="10" left="10" width="1141" height="510" zIndex="0" borderStyle="none">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis1" height="50" zIndex="0" format="T">
+                  <Widgets />
+                </Widget>
+                <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis1" width="50" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}">
+                  <Widgets>
+                    <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph1" zIndex="0" interpolationType="cardinal" xAxisRefId="OnlineChartTimeAxis1" lineColor="rgba(49, 130, 189, 1)" />
+                    <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph2" zIndex="1" interpolationType="cardinal" xAxisRefId="OnlineChartTimeAxis1" lineColor="rgba(104, 174, 214, 1)" />
+                    <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph3" zIndex="2" xAxisRefId="OnlineChartTimeAxis1" lineColor="rgba(158, 205, 225, 1)" />
+                  </Widgets>
+                </Widget>
+              </Widgets>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="2" width="200" height="45" zIndex="1" image="Media/SVGsymbols/Misc/BarChart.svg" text="Bar Chart" mouseDownImageColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.BarChart" id="BarChart1" top="10" left="10" width="600" height="500" zIndex="0" textColor="rgba(0, 0, 0, 1)" borderStyle="none">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem1" zIndex="0" text="BarChartItem1" borderWidth="0px" backColor="rgba(49, 130, 189, 1)" />
+                <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem2" zIndex="1" text="BarChartItem2" borderWidth="0px" backColor="rgba(104, 174, 214, 1)" />
+                <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem3" zIndex="2" text="BarChartItem3" borderWidth="0px" backColor="rgba(158, 205, 225, 1)" textColor="rgba(0, 0, 0, 1)" />
+              </Widgets>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="2" width="200" height="45" zIndex="2" image="Media/SVGsymbols/Symbols/Graph.svg" text="Line Chart" mouseDownImageColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.LineChart" id="LineChart1" top="10" left="10" width="1141" height="510" zIndex="0" borderStyle="none">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.LineChartIndexAxis" id="LineChartIndexAxis1" height="40" zIndex="0">
+                  <Widgets>
+                    <Widget xsi:type="widgets.brease.LineChartXAxisIndexCursor" id="LineChartXAxisIndexCursor1" zIndex="0" xAxisRefId="LineChartIndexAxis1" />
+                  </Widgets>
+                </Widget>
+                <Widget xsi:type="widgets.brease.LineChartYAxis" id="LineChartYAxis1" width="60" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}">
+                  <Widgets>
+                    <Widget xsi:type="widgets.brease.LineChartGraph" id="LineChartGraph1" zIndex="0" interpolationType="cardinal" xAxisRefId="LineChartIndexAxis1" lineColor="rgba(49, 130, 189, 1)" fillColor="rgba(49, 130, 189, 0.4)" />
+                  </Widgets>
+                </Widget>
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="30" left="980" width="151" height="30" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" backColor="rgba(255, 255, 255, 0)" backGroundGradient="none" borderStyle="none" textColor="rgba(49, 130, 189, 1)" textAlign="right" unitFontSize="24px" style="OutputLarge" />
+            <Widget xsi:type="widgets.brease.Button" id="ButtonCursorLeft" top="555" left="90" width="60" height="40" zIndex="2" image="Media/SVGSymbols/Arrow/ArrowLeft.svg" mouseDownImageColor="rgba(255, 255, 255, 1)" style="defaultSmall" />
+            <Widget xsi:type="widgets.brease.Button" id="ButtonCursorRight" top="555" left="1107" width="60" height="40" zIndex="3" image="Media/SVGSymbols/Arrow/ArrowRight.svg" mouseDownImageColor="rgba(255, 255, 255, 1)" style="defaultSmall" />
+            <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="555" left="719" width="70" height="40" zIndex="4" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" maxValue="5" minValue="1" style="InputCommand" />
+            <Widget xsi:type="widgets.brease.Label" id="Label1" top="560" left="502" width="189" height="30" zIndex="5" text="$IAT/Chart.StepSize" style="Caption" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem4" left="2" width="200" height="45" zIndex="3" image="Media/SVGsymbols/Misc/PieChart.svg" text="Pie Chart" mouseDownImageColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.PieChart" id="PieChart1" top="49" left="34" width="496" height="496" zIndex="0" borderColor="rgba(255, 255, 255, 1)" fontSize="16px">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.PieChartItem" id="PieChartItem1" top="211" left="198" zIndex="0" text="PieChartItem1" backColor="rgba(49, 130, 189, 1)" />
+                <Widget xsi:type="widgets.brease.PieChartItem" id="PieChartItem2" top="259" left="295" zIndex="1" text="PieChartItem2" backColor="rgba(104, 174, 214, 1)" />
+              </Widgets>
+            </Widget>
+            <Widget xsi:type="widgets.brease.PieChart" id="PieChart2" top="49" left="559" width="496" height="496" zIndex="1" transitionTime="300" borderColor="rgba(255, 255, 255, 1)" fontSize="16px">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.PieChartItem" id="PieChartItem4" top="211" left="198" zIndex="0" text="PieChartItem4" backColor="rgba(255, 136, 0, 0.8)" />
+                <Widget xsi:type="widgets.brease.PieChartItem" id="PieChartItem5" top="259" left="295" zIndex="1" text="PieChartItem5" backColor="rgba(255, 136, 0, 0.6)" />
+                <Widget xsi:type="widgets.brease.PieChartItem" id="PieChartItem6" top="293" left="391" zIndex="2" text="PieChartItem6" />
+              </Widgets>
+            </Widget>
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem5" left="2" width="220" height="45" zIndex="4" image="Media/SVGsymbols/Misc/BarChart.svg" text="Stacked Bar Chart" imageHeight="32" imageWidth="32" mouseDownImageColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.StackedBarChart" id="StackedBarChart1" top="10" left="10" width="600" height="500" zIndex="78">
+              <Widgets>
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem1" zIndex="0" maxValue="10" text="0" borderWidth="3px" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem2" zIndex="1" maxValue="10" text="1" borderWidth="3px" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem3" zIndex="2" maxValue="10" text="2" borderWidth="3px" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem4" zIndex="3" maxValue="10" text="3" borderWidth="3px" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem5" zIndex="4" maxValue="10" text="4" borderWidth="3px" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem6" zIndex="5" maxValue="10" text="5" borderWidth="3px" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem7" zIndex="6" maxValue="10" text="6" borderWidth="3px" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem8" zIndex="7" maxValue="10" text="7" borderWidth="3px" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem9" zIndex="8" maxValue="10" text="8" borderWidth="3px" style="blue2" />
+                <Widget xsi:type="widgets.brease.StackedBarChartItem" id="StackedBarChartItem10" zIndex="9" maxValue="10" text="9" borderWidth="3px" style="blue1" />
+              </Widgets>
+            </Widget>
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSlider2" top="157" left="1486" width="83" height="438" zIndex="76" maxValue="200" orientation="BottomToTop" thumbSize="35px" thumbColor="rgba(104, 174, 214, 1)" thumbGradient="none" trackGradient="none" />
+    <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSlider1" top="157" left="1415" width="83" height="438" zIndex="77" maxValue="200" orientation="BottomToTop" thumbSize="35px" thumbColor="rgba(49, 130, 189, 1)" thumbGradient="none" trackGradient="none" />
+  </Widgets>
+</Content>

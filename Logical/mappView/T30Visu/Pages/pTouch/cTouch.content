@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cTouchT30" height="485" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonMsgBox" top="140" left="140" width="260" height="80" zIndex="0" multiLine="true" text="Open MessageBox" wordWrap="true" fontSize="22px" style="Operate" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDialogModal" top="240" left="140" width="260" height="80" zIndex="1" multiLine="true" text="Open modal dialog" wordWrap="true" fontSize="22px" style="Operate" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDialogModeless" top="340" left="140" width="260" height="80" zIndex="2" multiLine="true" text="Open modeless dialog" wordWrap="true" fontSize="22px" style="Operate" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageListEngine" top="200" left="760" width="140" height="140" zIndex="3" imageList="['Engine.svg', 'EngineMove.svg']" imagePrefix="Media/ImageList/Engine/" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="28" left="40" width="940" height="50" zIndex="4" text="Event and action" borderWidth="0px 0px 4px 0px" borderColor="rgba(255, 136, 0, 1)" borderStyle="solid" textAlign="left" fontSize="30px" padding="0px 0px 0px 0px" margin="0px" style="TitelLabel" />
+  </Widgets>
+</Content>

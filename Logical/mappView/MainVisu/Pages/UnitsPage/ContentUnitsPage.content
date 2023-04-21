@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentUnitsPage" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="286" left="-85" width="300" height="110" zIndex="0" multiLine="true" text="$Page.Units" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="1" image="Media/SVGsymbols/Edit/Edit.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox_BottomUnit" top="100" left="200" width="500" height="465" zIndex="2" text="$Units.GropuBox">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="50" width="80" height="24" zIndex="11" text="min:" textColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="40" left="50" width="80" height="24" zIndex="12" text="max:" textColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="20" left="110" width="150" height="24" zIndex="13" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2},'imperial-us':{'decimalPlaces':2}}" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'FAH'}" unitAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput2" top="40" left="110" width="150" height="24" zIndex="14" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2},'imperial-us':{'decimalPlaces':2}}" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'FAH'}" unitAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput_Celsius" top="70" left="50" width="190" height="50" zIndex="15" limitViolationPolicy="setToLimit" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" unitFontSize="16px" style="InputLarge" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput_FAH" top="70" left="270" width="180" height="50" zIndex="16" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2},'imperial-us':{'decimalPlaces':2}}" unit="{'metric':'FAH','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" unitFontSize="16px" style="OutputLarge" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput_mm" top="140" left="50" width="190" height="50" zIndex="17" ellipsis="true" format="{'metric':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2},'imperial-us':{'decimalPlaces':2}}" limitViolationPolicy="setToLimit" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" unitFontSize="16px" style="InputLarge" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput_cm" top="140" left="270" width="180" height="50" zIndex="18" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2},'imperial-us':{'decimalPlaces':2}}" unit="{'metric':'CMT','imperial':'INH','imperial-us':'INH'}" unitAlign="right" unitFontSize="16px" style="OutputLarge" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput_dm" top="210" left="270" width="180" height="50" zIndex="19" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':3},'imperial-us':{'decimalPlaces':3}}" unit="{'metric':'DMT','imperial':'FOT','imperial-us':'FOT'}" unitAlign="right" unitFontSize="16px" style="OutputLarge" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput_m" top="280" left="270" width="180" height="50" zIndex="20" format="{'metric':{'decimalPlaces':4,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':4},'imperial-us':{'decimalPlaces':4}}" unit="{'metric':'MTR','imperial':'YRD','imperial-us':'YRD'}" unitAlign="right" unitFontSize="16px" style="OutputLarge" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput_km" top="350" left="270" width="180" height="50" zIndex="21" ellipsis="true" format="{'metric':{'decimalPlaces':5,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':4},'imperial-us':{'decimalPlaces':4}}" unit="{'metric':'KTM','imperial':'SMI','imperial-us':'SMI'}" unitAlign="right" unitFontSize="16px" style="OutputLarge" />
+        <Widget xsi:type="widgets.brease.MeasurementSystemSelector" id="MeasurementSystemSelector1" top="350" left="50" width="180" height="50" zIndex="22" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

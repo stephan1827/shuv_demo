@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cT50C" height="480" width="480" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ProfileGenerator" id="ProfileGenerator1" top="0" left="0" width="470" height="380" zIndex="11" borderColor="rgba(0, 0, 0, 1)" backColor="rgba(230, 230, 230, 1)" cornerRadius="10px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ProfileGeneratorXAxis" id="ProfileGeneratorXAxis1" height="40" zIndex="14" unit="{'metric':'MMT','imperial':'INH','imperial-us':'INH'}" axisColor="rgba(128, 128, 128, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ProfileGeneratorXAxisStepItem" id="ProfileGeneratorXAxisItem1" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.ProfileGeneratorYAxis" id="ProfileGeneratorYAxis1" width="50" zIndex="15" unit="{'metric':'C16','imperial':'IU','imperial-us':'IU'}" axisColor="rgba(128, 128, 128, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ProfileGeneratorYAxisStepItem" id="ProfileGeneratorYAxisItem1" zIndex="0" xAxisItemId="ProfileGeneratorXAxisItem1" lineColor="rgba(255, 0, 0, 1)" editLineWidth="30px" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Table" id="Table1" top="400" left="0" width="320" height="60" zIndex="1" columnWidth="60" dataOrientation="horizontal" cellPadding="3px" cornerRadius="10px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TableItem" id="TableItem1" zIndex="0" maxValue="500" text="X" />
+        <Widget xsi:type="widgets.brease.TableItem" id="TableItem2" zIndex="1" input="true" maxValue="200" text="Y" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="Button1" top="390" left="340" width="120" height="40" zIndex="2" multiLine="true" text="Edit Curve" wordWrap="true" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.Button" id="Button2" top="440" left="340" width="120" height="40" zIndex="3" multiLine="true" text="Disable Edit" wordWrap="true" style="defaultSmall" />
+  </Widgets>
+</Content>

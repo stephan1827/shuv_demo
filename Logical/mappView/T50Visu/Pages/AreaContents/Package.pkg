@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.7.54 SP?>
+<Package PackageType="AreaContentsPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">NavHigh.content</Object>
+    <Object Type="File">NavWide.content</Object>
+    <Object Type="File" Description="Widgets">T50A.content</Object>
+    <Object Type="File" Description="Gauges">T50B.content</Object>
+    <Object Type="File" Description="Profile Generator">T50C.content</Object>
+    <Object Type="File" Description="Multitouch">T50D.content</Object>
+    <Object Type="File" Description="Chart">T50E.content</Object>
+  </Objects>
+</Package>

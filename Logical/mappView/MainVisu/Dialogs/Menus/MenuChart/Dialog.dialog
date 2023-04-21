@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ddef:Dialog id="DialogChartMenu" layoutRefId="MenuLayout"  xmlns:ddef="http://www.br-automation.com/iat2015/dialogDefinition/v2"
+	styleRefId="Menu">
+	
+	
+  <Assignments>
+    <Assignment type="Content" baseContentRefId="ContentChartMenu" areaRefId="AreaMenu" backColor="transparent" />
+  </Assignments>
+</ddef:Dialog>

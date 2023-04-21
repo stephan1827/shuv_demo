@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/Expression</prop>
+  </header>
+  <body>
+    <tu tuid="ExpressionOverview">
+      <tuv xml:lang="de">
+        <seg>Ausdruck</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Expression</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Expression.Result">
+      <tuv xml:lang="de">
+        <seg>Ergebnis:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Result:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ResultBindingV">
+      <tuv xml:lang="de">
+        <seg>Ergebnis
+verwendet für Sichtbarkeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Result
+used for visibility</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ResultBindingE">
+      <tuv xml:lang="de">
+        <seg>Ergebnis
+verwendet für Aktiv/Inaktiv</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Result
+used for enable/disable</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Info">
+      <tuv xml:lang="de">
+        <seg>Eine Expression ist ein Konstrukt, das nach seiner Auswertung einen (boolschen) Wert zurückliefert. Die Expression ist Instanz eines Expression-Typs, dessen Operanden an entsprechende Quellen gebunden werden.
+Ein Expression Typ definiert Operanden und deren Verknüpfungsvorschrift.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>An expression is a construct that returns a value (Boolean) after it has been evaluated. An expression is an instance of an expression type whose operands are connected to corresponding sources.
+An expression type defines operands and their combination. </seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

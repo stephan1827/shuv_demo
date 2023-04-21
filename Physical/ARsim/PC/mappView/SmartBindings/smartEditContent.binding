@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="smartEditContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Simulation:valueCel" attribute="node" />
+			<Target xsi:type="brease" contentRefId="smartEditContent" widgetRefId="RadialSlider1" attribute="node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Simulation:valuemm" attribute="node" />
+			<Target xsi:type="brease" contentRefId="smartEditContent" widgetRefId="RadialSlider2" attribute="node" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>

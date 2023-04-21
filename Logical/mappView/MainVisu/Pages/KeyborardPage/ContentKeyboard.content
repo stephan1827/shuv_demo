@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentKeyboard" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="250" left="-172" width="430" height="55" zIndex="0" multiLine="true" text="$Page.Keyboard" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="1" image="Media/SVGsymbols/Misc/Keyboard.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="150" left="200" width="500" height="500" zIndex="78" text="KeyPress">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="58" left="51" width="68" height="30" zIndex="0" text="?" style="Title1" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="46" left="166" width="317" height="54" zIndex="1" multiLine="true" text="$IAT/Page.KeyQuestionMark" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputKey" top="376" left="166" width="100" height="30" zIndex="2" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="376" left="45" width="80" height="30" zIndex="3" text="key=" />
+        <Widget xsi:type="widgets.brease.Label" id="Label11" top="413" left="45" width="98" height="30" zIndex="4" text="keyASCII=" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputKeyAscii" top="413" left="166" width="100" height="30" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="right" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="150" left="740" width="500" height="500" zIndex="79" text="KeyDown / KeyUp">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="46" left="166" width="317" height="54" zIndex="0" multiLine="true" text="$IAT/Page.KeyF7" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="58" left="51" width="68" height="30" zIndex="1" text="F7" style="Title1" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="119" left="166" width="317" height="54" zIndex="2" multiLine="true" text="$IAT/Page.KeyF8" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="131" left="51" width="68" height="30" zIndex="3" text="F8" style="Title1" />
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="204" left="51" width="68" height="30" zIndex="4" text="F2" style="Title1" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="186" left="166" width="258" height="72" zIndex="5" multiLine="true" text="$IAT/Page.KeyF2" wordWrap="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="186" left="422" width="61" height="30" zIndex="6" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="40" left="200" width="1040" height="76" zIndex="80" multiLine="true" text="$Page.KeyInfo" wordWrap="true" padding="20px" style="Caption" />
+  </Widgets>
+</Content>

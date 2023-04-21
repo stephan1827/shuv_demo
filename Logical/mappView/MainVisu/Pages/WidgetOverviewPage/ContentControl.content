@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentControl" height="570" width="1200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.RadialSlider" id="RadialSlider1" top="28" left="38" width="374" height="374" zIndex="1" radius="160px" showValueDisplay="false" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="RadialGauge3" top="96" left="106" width="237" height="237" zIndex="0" text="RadialGauge3" borderWidth="1px" borderColor="rgba(221, 221, 221, 1) rgba(221, 221, 221, 1) rgba(221, 221, 221, 1) rgba(221, 221, 221, 1)" style="Gauge2" />
+    <Widget xsi:type="widgets.brease.Button" id="Button8" top="439" left="10" width="402" height="54" zIndex="2" cornerRadius="999px" disabledBackGroundGradient="linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)" enable="false" />
+    <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSlider2" top="406" left="10" width="382" zIndex="3" thumbSize="40px" thumbGradient="none" trackColor="rgba(200, 200, 200, 0)" trackGradient="none" />
+    <Widget xsi:type="widgets.brease.XYJoystick" id="XYJoystick1" top="90" left="558" zIndex="4" decimalPlaces="4" thumbGradient="none" />
+    <Widget xsi:type="widgets.brease.Label" id="Label9" top="114" left="873" width="48" zIndex="5" text="X:" />
+    <Widget xsi:type="widgets.brease.Label" id="Label10" top="155" left="873" width="48" zIndex="6" text="Y:" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput3" top="114" left="921" zIndex="7" format="{'metric':{'decimalPlaces':4,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':4,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':4,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="155" left="921" zIndex="8" format="{'metric':{'decimalPlaces':4,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':4,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':4,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.RangeSlider" id="RangeSlider1" top="380" left="540" width="520" height="140" zIndex="9" ellipsis="false" maxRange="400" maxValue="1000" showValueDisplay="true" fontSize="14px" />
+  </Widgets>
+</Content>

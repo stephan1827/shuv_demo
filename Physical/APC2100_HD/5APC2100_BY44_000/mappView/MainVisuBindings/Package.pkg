@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentAnimationPage.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentChartPage.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentClientInfo.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentEventPage.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentExpressions.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentFavoriteWatch.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentHeaderNavigation.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentKeyboard.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentMainPage.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentNavigation.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentProfileGen.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentStylePage.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentTablePage.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUnitsPage.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUseCase1.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUseCase3.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUseCase4.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUseCase5.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUseCase6.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUseCase7.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUseCase8.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUseCaseBase.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentUserLimit.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentVarList.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\gSystemInfo.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentFormular.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\BindingList.bindinglist</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentContainer.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentGraphic.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentSimple.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuBindings\ContentControl.binding</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="heating">
+      <tuv xml:lang="en">
+        <seg>Heating</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Heizung</seg>
+      </tuv>
+    </tu>
+    <tu tuid="cooling">
+      <tuv xml:lang="en">
+        <seg>Cooling</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Kühlen</seg>
+      </tuv>
+    </tu>
+    <tu tuid="cascade">
+      <tuv xml:lang="en">
+        <seg>Cascade</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Kaskade</seg>
+      </tuv>
+    </tu>
+    <tu tuid="preasure">
+      <tuv xml:lang="en">
+        <seg>Pressure</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Druck</seg>
+      </tuv>
+    </tu>
+    <tu tuid="timer">
+      <tuv xml:lang="en">
+        <seg>Timer</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zeit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="zone3">
+      <tuv xml:lang="en">
+        <seg>Zone 3</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zone3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Favorite.apply">
+      <tuv xml:lang="en">
+        <seg>Select a cell and apply item to cell</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wähle Zelle und weise ein Element zu</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item1">
+      <tuv xml:lang="en">
+        <seg>Item 1</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item2">
+      <tuv xml:lang="en">
+        <seg>Item 2</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item3">
+      <tuv xml:lang="en">
+        <seg>Item 3 </seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item4">
+      <tuv xml:lang="en">
+        <seg>Item 4</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item5">
+      <tuv xml:lang="en">
+        <seg>Item 5</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 5</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item6">
+      <tuv xml:lang="en">
+        <seg>Item 6</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 6</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item7">
+      <tuv xml:lang="en">
+        <seg>Item 7</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 7</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item8">
+      <tuv xml:lang="en">
+        <seg>Item 8</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 8</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item9">
+      <tuv xml:lang="en">
+        <seg>Item 9</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 9</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item10">
+      <tuv xml:lang="en">
+        <seg>Item 10</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 10</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item11">
+      <tuv xml:lang="en">
+        <seg>Item 11</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 11</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item12">
+      <tuv xml:lang="en">
+        <seg>Item 12</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 12</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item13">
+      <tuv xml:lang="en">
+        <seg>Item 13</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 13</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item14">
+      <tuv xml:lang="en">
+        <seg>Item 14</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 14</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item15">
+      <tuv xml:lang="en">
+        <seg>Item 15</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 15</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Item16">
+      <tuv xml:lang="en">
+        <seg>Item 16</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Element 16</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

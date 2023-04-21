@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentWidgets" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="290" left="-85" width="300" height="110" zIndex="0" multiLine="true" text="$Page.Widgets" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="1" image="Media/SVGsymbols/Symbols/Tool.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="100" left="200" width="1200" height="600" zIndex="78">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" width="200" zIndex="0" text="$Widgets.Tab.First">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl1" top="0" left="0" zIndex="0" contentId="ContentSimple" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" width="200" zIndex="1" text="$Widgets.Tab.Second">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl2" top="0" left="0" zIndex="0" contentId="ContentContainer" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="200" zIndex="2" text="$Widgets.Tab.Third">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl3" top="0" left="0" zIndex="0" contentId="ContentGraphic" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem4" left="0" width="200" zIndex="3" text="$Widgets.Tab.Fourth">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl5" top="0" left="0" zIndex="0" contentId="ContentSystem" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem5" left="0" width="200" zIndex="4" text="$IAT/Widgets.Tab.Fifth">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl4" top="10" left="0" zIndex="0" contentId="ContentControl" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem6" left="0" width="200" zIndex="5" text="Drag&amp;Drop">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl6" top="0" left="0" zIndex="0" contentId="ContentDragDrop" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

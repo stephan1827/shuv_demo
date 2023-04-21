@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EventBindingSet id="ContentStylePage_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event" refId="::Simulation:indicateStyle" event="ValueChanged" />
+			<EventHandler condition="newValue">
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentStylePage" widgetRefId="Button8" >
+								<Method xsi:type="widgets.brease.Button.Action.SetStyle" value="defaultSmall" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">	
+						<Action>
+							<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="ContentStylePage" widgetRefId="NumericOutput1" >
+								<Method xsi:type="widgets.brease.NumericOutput.Action.SetStyle" value="OutputLarge" />
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+			<EventHandler condition="NOT newValue">
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentStylePage" widgetRefId="Button8" >
+								<Method xsi:type="widgets.brease.Button.Action.SetStyle" value="IndicateState" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">	
+						<Action>
+							<Target xsi:type="widgets.brease.NumericOutput.Action" contentRefId="ContentStylePage" widgetRefId="NumericOutput1" >
+								<Method xsi:type="widgets.brease.NumericOutput.Action.SetStyle" value="IndicateState" />
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+	
+		
+	</Bindings>
+</EventBindingSet>

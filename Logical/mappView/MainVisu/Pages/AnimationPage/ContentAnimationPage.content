@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentAnimationPage" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="256" left="-152" width="388" height="84" zIndex="1" multiLine="true" text="$Page.Animation" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="2" image="Media/SVGsymbols/Symbols/Conveyor.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="100" left="150" width="1400" height="600" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" width="200" height="30" zIndex="0" text="$IAT/Animation/Tab1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Paper" id="PaperInj" top="10" left="10" width="1370" height="420" zIndex="0" borderStyle="dashed" borderColor="rgba(204, 204, 204, 1)" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonInjStart" top="478" left="580" width="80" height="50" zIndex="1" mouseDownText="Run" text="$IAT/Animation/Start" style="Operate" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" width="200" height="30" zIndex="1" text="$IAT/Animation/Tab2">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Paper" id="PaperLift" top="10" left="10" width="667" height="545" zIndex="0" colorList="#FF0000,#000000,#FFCC99,#993333" svgFilePath="Media/Animation/liftAnim.svg" borderStyle="dashed" borderColor="rgba(204, 204, 204, 1)" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonLiftStart" top="10" left="700" width="80" height="50" zIndex="1" text="$IAT/Animation/Start" style="Operate" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="200" height="30" zIndex="2" text="$IAT/Animation/Tab3">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Paper" id="PaperBox" top="10" left="10" width="667" height="545" zIndex="0" svgFilePath="Media/Animation/boxlift.svg" borderStyle="dashed" borderColor="rgba(204, 204, 204, 1)" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonStartBox" top="10" left="700" width="80" height="50" zIndex="1" text="$IAT/Animation/Start" italic="false" style="Operate" />
+            <Widget xsi:type="widgets.brease.Label" id="Label1" top="174" left="716" width="121" height="30" zIndex="2" text="$IAT/Animation/Moved" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="172" left="811" width="105" height="34" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" style="OutputLarge" />
+            <Widget xsi:type="widgets.brease.Label" id="Label2" top="174" left="925" width="121" height="30" zIndex="4" text="$IAT/Animation/From" />
+            <Widget xsi:type="widgets.brease.Label" id="Label3" top="245" left="716" width="200" height="30" zIndex="5" text="$IAT/Animation/Click" style="Title2" />
+            <Widget xsi:type="widgets.brease.Label" id="Label4" top="300" left="716" width="47" height="30" zIndex="6" text="x" bold="true" />
+            <Widget xsi:type="widgets.brease.Label" id="Label5" top="344" left="716" width="47" height="30" zIndex="7" text="y" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputX" top="298" left="779" width="137" height="34" zIndex="8" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" style="OutputLarge" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputY" top="342" left="779" width="137" height="34" zIndex="9" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" style="OutputLarge" />
+            <Widget xsi:type="widgets.brease.Label" id="Label6" top="388" left="716" width="47" height="30" zIndex="10" text="id" bold="true" />
+            <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSVGid" top="386" left="779" width="267" height="34" zIndex="11" value="no selection" padding="5px" style="Output" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

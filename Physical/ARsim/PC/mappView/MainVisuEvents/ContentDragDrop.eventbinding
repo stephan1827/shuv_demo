@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ContentDragDrop_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+    
+		<!--drag events-->
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentDragDrop" widgetRefId="ButtonDragTop" event="OnDragStart" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.FlexBoxItem.Action" contentRefId="ContentDragDrop" widgetRefId="FlexBoxItem1" >
+							<Method xsi:type="widgets.brease.FlexBoxItem.Action.SetStyle" value="permission" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.FlexBoxItem.Action" contentRefId="ContentDragDrop" widgetRefId="FlexBoxItem2" >
+							<Method xsi:type="widgets.brease.FlexBoxItem.Action.SetStyle" value="nopermission" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentDragDrop" widgetRefId="ButtonDragTop" >
+							<Method xsi:type="widgets.brease.Button.Action.SetVisible" value="false" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentDragDrop" widgetRefId="ButtonDragTop" event="OnDragEnd" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.FlexBoxItem.Action" contentRefId="ContentDragDrop" widgetRefId="FlexBoxItem1" >
+							<Method xsi:type="widgets.brease.FlexBoxItem.Action.SetStyle" value="default" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.FlexBoxItem.Action" contentRefId="ContentDragDrop" widgetRefId="FlexBoxItem2" >
+							<Method xsi:type="widgets.brease.FlexBoxItem.Action.SetStyle" value="default" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentDragDrop" widgetRefId="ButtonDragTop" >
+							<Method xsi:type="widgets.brease.Button.Action.SetVisible" value="true" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+	
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentDragDrop" widgetRefId="ButtonDragBottom" event="OnDragStart" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.FlexBoxItem.Action" contentRefId="ContentDragDrop" widgetRefId="FlexBoxItem1" >
+							<Method xsi:type="widgets.brease.FlexBoxItem.Action.SetStyle" value="nopermission" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.FlexBoxItem.Action" contentRefId="ContentDragDrop" widgetRefId="FlexBoxItem2" >
+							<Method xsi:type="widgets.brease.FlexBoxItem.Action.SetStyle" value="permission" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentDragDrop" widgetRefId="ButtonDragBottom" >
+							<Method xsi:type="widgets.brease.Button.Action.SetVisible" value="false" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentDragDrop" widgetRefId="ButtonDragBottom" event="OnDragEnd" />
+			<EventHandler>
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.FlexBoxItem.Action" contentRefId="ContentDragDrop" widgetRefId="FlexBoxItem1" >
+							<Method xsi:type="widgets.brease.FlexBoxItem.Action.SetStyle" value="default" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.FlexBoxItem.Action" contentRefId="ContentDragDrop" widgetRefId="FlexBoxItem2" >
+							<Method xsi:type="widgets.brease.FlexBoxItem.Action.SetStyle" value="default" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentDragDrop" widgetRefId="ButtonDragBottom" >
+							<Method xsi:type="widgets.brease.Button.Action.SetVisible" value="true" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>		
+		
+		<!--drop events-->
+		
+		<EventBinding>
+			<Source xsi:type="widgets.brease.ContentControl.Event" contentRefId="ContentDragDrop" widgetRefId="ContentControl1" event="OnDrop" />
+			<EventHandler condition="widgetId=&quot;ButtonDragTop&quot;">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="ContentDragDrop" widgetRefId="ContentControl1" >
+							<Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="SubContentDnD1" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentDragDrop" widgetRefId="ButtonDragTop" >
+							<Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+
+		<EventBinding>
+			<Source xsi:type="widgets.brease.ContentControl.Event" contentRefId="ContentDragDrop" widgetRefId="ContentControl2" event="OnDrop" />
+			<EventHandler condition="widgetId=&quot;ButtonDragBottom&quot;">
+				<Parallel>
+					<Action>
+						<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="ContentDragDrop" widgetRefId="ContentControl2" >
+							<Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="SubContentDnD2" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentDragDrop" widgetRefId="ButtonDragBottom" >
+							<Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--reset-->
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="SubContentDnD1" widgetRefId="ButtonResetTop" event="Click" />
+			<EventHandler>			
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="DndResetTop" >
+						<Method xsi:type="session.VariableAction.SetValueBool" value="true" />
+					</Target>
+				</Action>			
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="SubContentDnD2" widgetRefId="ButtonResetBottom" event="Click" />
+			<EventHandler>			
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="DndResetBottom" >
+						<Method xsi:type="session.VariableAction.SetValueBool" value="true" />
+					</Target>
+				</Action>				
+			</EventHandler>
+		</EventBinding>
+		
+		<!--reset button enable state-->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="DndResetTop" event="ValueChanged"/>
+			<EventHandler condition="newValue">
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="ContentDragDrop" widgetRefId="ContentControl1" >
+								<Method xsi:type="widgets.brease.ContentControl.Action.UnloadContent" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="session.VariableAction" refId="DndResetTop" >
+								<Method xsi:type="session.VariableAction.SetValueBool" value="false" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="2">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentDragDrop" widgetRefId="ButtonDragTop" >
+								<Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="DndResetBottom" event="ValueChanged"/>
+			<EventHandler condition="newValue">
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="ContentDragDrop" widgetRefId="ContentControl2" >
+								<Method xsi:type="widgets.brease.ContentControl.Action.UnloadContent" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="session.VariableAction" refId="DndResetBottom" >
+								<Method xsi:type="session.VariableAction.SetValueBool" value="false" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="2">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentDragDrop" widgetRefId="ButtonDragBottom" >
+								<Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+	</Bindings>
+</EventBindingSet>

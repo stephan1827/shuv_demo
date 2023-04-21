@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentUseCase5_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Chart:chartValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase5" widgetRefId="LineChartGraph1" attribute="node" />
+		</Binding>
+			
+		<Binding mode="oneWay"> 
+			<Source xsi:type="brease" contentRefId="ContentUseCase5" widgetRefId="LineChartXAxisIndexCursor1" attribute="value" /> 
+			<Target xsi:type="expression" refId="myCursorIndexDistance" attribute="inCursor1" /> 
+		</Binding>
+		<Binding mode="oneWay"> 
+			<Source xsi:type="brease" contentRefId="ContentUseCase5" widgetRefId="LineChartXAxisIndexCursor2" attribute="value" /> 
+			<Target xsi:type="expression" refId="myCursorIndexDistance" attribute="inCursor2" /> 
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="expression" refId="myCursorIndexDistance" attribute="result" />
+			<Target xsi:type="brease" contentRefId="ContentUseCase5" widgetRefId="RadialGauge1" attribute="value" />
+		</Binding>
+		
+		
+		
+  	</Bindings>
+</BindingsSet>

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/useCase</prop>
+  </header>
+  <body>
+    <tu tuid="UseCase1">
+      <tuv xml:lang="de">
+        <seg>Unit Binding aus TextID
+Dieser Anwendungsfall beschreibt, wie Einheiten in einem Textkey verwaltet und über ein IndexText Snippet umgeschalten werden können. Der über die DropDownBox selektierte Textkey wird auf eine Session Variable gebunden, welche wiederum an das unit Property des NumericOutput Widgets gebunden ist.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Unit binding from text id
+This use case describes how units can be managed in a text key and can be switched via an IndexText snippet. The Textkey selected via the DropDownBox is bound to a session variable, which in turn is bound to the unit Property of the NumericOutput widget.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UseCase2">
+      <tuv xml:lang="de">
+        <seg>Menü mit Dialogen
+Dieser use case beschreibt, wie ein Menü mit Hilfe von absolut positionierten Dialoge realisiert werden kann. Das Öffnen und Schließen der Dialoge erfolgt nur über das EventBinding.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Menu with dialogs
+This use case describes how a menu can be implemented using absolutely positioned dialogs. The dialogs are opened and closed only via the EventBinding.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UseCase3">
+      <tuv xml:lang="de">
+        <seg>Großer Content
+Es wird ein Content auf eine Area referenziert, welcher größer als diese ist. Scrollbalken erlauben das verschieben des Contents in der Area.
+</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Large Content
+A content is referenced to an area that is larger than this area. Scroll bars allow you to move the content in the area.
+
+</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UseCase4">
+      <tuv xml:lang="de">
+        <seg>Zeitdifferenz zwischen zwei Messcursor ermitteln
+Es können zwei Messcursor an der Zeitachse bewegt werden. Es wird die Zeit für jede Cursorposition und die Zeitdifferenz zwischen den Cursor mit Hilfe von Expressions ermittelt.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Determine time difference between two measuring cursors
+Two measuring cursors can be moved along the time axis. The time for each cursor position is determined and the time difference between the cursors is determined using expressions.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UseCase5">
+      <tuv xml:lang="de">
+        <seg>Indexdifferenz zwischen zwei Messcursor ermitteln
+Es können zwei Messcursor an der Indexachse bewegt werden. Es wird die Indexdifferenz zwischen den Cursor mit Hilfe von Expressions ermittelt.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Determine time index between two measuring cursors
+Two measuring cursors can be moved along the index axis. The index difference between the cursors is determined using expressions.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UseCase6">
+      <tuv xml:lang="de">
+        <seg>2 Schritt Bestätigung
+Eine Eingabe wird auf eine Session Variable durchgeführt. Im ersten Schritt (Accept) wird diese in eine weitere Session Variable übergeben. Erst im zweiten Schritt (Confirm) wird dieser Wert auf die OPC UA Variable geschrieben.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>2 step confirmation
+An input is made to a session variable. In the first step (Accept), the value is passed to another session variable. In step two (Confirm), this value is written to the OPC UA variable.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UseCase7">
+      <tuv xml:lang="de">
+        <seg>SVG Animation</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>SVG animation</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UseCase9">
+      <tuv xml:lang="de">
+        <seg>Widget Anwendungen
+Beim Drücken des HoverButtons werden weitere HoverButton Widgets angezeigt. Während des Drückens können diese durch eine Drag Operation ausgewählt werden, wodurch eine beliebige Aktion ausgeführt wird.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Widget use cases
+Pressing the HoverButton displays additional HoverButton widgets. While pressing, these can be selected by a drag operation, whereby any action is executed.
+</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Temperatures">
+      <tuv xml:lang="de">
+        <seg>Temperatur</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperatures</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Pressure">
+      <tuv xml:lang="de">
+        <seg>Druck</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Pressure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Length">
+      <tuv xml:lang="de">
+        <seg>Länge</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Length</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SelectUnit">
+      <tuv xml:lang="de">
+        <seg>Einheit wählen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Select unit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetValue">
+      <tuv xml:lang="de">
+        <seg>Sollwert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set value</seg>
+      </tuv>
+    </tu>
+    <tu tuid="DisplayValue">
+      <tuv xml:lang="de">
+        <seg>Wert in ausgewählter Einheit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Value with selected unit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Millimeter">
+      <tuv xml:lang="de">
+        <seg>Millimeter</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Millimeter</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Centimeter">
+      <tuv xml:lang="de">
+        <seg>Zentimeter</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Centimeter</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Decimeter">
+      <tuv xml:lang="de">
+        <seg>Dezimeter</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Decimeter</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Meter">
+      <tuv xml:lang="de">
+        <seg>Meter</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Meter</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Bar">
+      <tuv xml:lang="de">
+        <seg>Bar</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Bar</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PSI">
+      <tuv xml:lang="de">
+        <seg>PSI</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PSI</seg>
+      </tuv>
+    </tu>
+    <tu tuid="InputValue">
+      <tuv xml:lang="de">
+        <seg>Eingabe</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Input</seg>
+      </tuv>
+    </tu>
+    <tu tuid="OutputValue">
+      <tuv xml:lang="de">
+        <seg>Wert bestätigen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Accept value</seg>
+      </tuv>
+    </tu>
+    <tu tuid="OPCValue">
+      <tuv xml:lang="de">
+        <seg>Wert übernehmen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Confirm value</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase1">
+      <tuv xml:lang="de">
+        <seg>Dynamische Einheiten</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Dynamic units</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase2">
+      <tuv xml:lang="de">
+        <seg>Menü mit Dialogen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Menu with dialogs</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase3">
+      <tuv xml:lang="de">
+        <seg>Großer Content</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Large Content</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase4">
+      <tuv xml:lang="de">
+        <seg>Cursor Zeit Diff.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cursor time diff.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase5">
+      <tuv xml:lang="de">
+        <seg>Cursor Index Diff.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cursor index diff.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase6">
+      <tuv xml:lang="de">
+        <seg>2 Schritt Bestätigung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>2 step confirmation
+</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase7">
+      <tuv xml:lang="de">
+        <seg>SVG Animation</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>SVG animation</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase8">
+      <tuv xml:lang="de">
+        <seg>Logarithmischer Chart</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Logarithmic chart</seg>
+      </tuv>
+    </tu>
+    <tu tuid="pickerUseCase9">
+      <tuv xml:lang="de">
+        <seg>Widget Anwendungen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Widget use cases</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HoverText1">
+      <tuv xml:lang="de">
+        <seg>Formular
+Eingabe</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Formular
+Input</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HoverText2">
+      <tuv xml:lang="de">
+        <seg>Widget
+Übersicht</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Widget
+overview</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HoverText3" />
+    <tu tuid="HoverText4" />
+  </body>
+</tmx>

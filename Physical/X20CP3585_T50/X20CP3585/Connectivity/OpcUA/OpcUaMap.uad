@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="3">
+  <DefaultView>
+    <Module>
+      <Task Name="Chart" Enable="True">
+        <Variable Name="chartValue" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">200</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="graphValue" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">200</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+      </Task>
+      <Task Name="ProfileGen" Enable="True">
+        <Variable Name="X" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">500</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millimetre</Text>
+              </Description>
+              <DisplayName>
+                <Text>mm</Text>
+              </DisplayName>
+              <UnitId>5066068</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Y" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">200</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millimetre per second</Text>
+              </Description>
+              <DisplayName>
+                <Text>mm/s</Text>
+              </DisplayName>
+              <UnitId>4403510</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

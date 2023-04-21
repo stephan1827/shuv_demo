@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Physical xmlns="http://br-automation.co.at/AS/Physical">
+  <Objects>
+    <Object Type="Configuration">ARsim</Object>
+    <Object Type="Configuration">APC2100_HD</Object>
+    <Object Type="Configuration">X20CP3585_T50</Object>
+    <Object Type="Configuration">X20CP1381_T30</Object>
+  </Objects>
+</Physical>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EventBindingSet id="ContentUseCase2_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2"
+                 xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    
+		<EventBinding id="ContentUseCase2.ButtonConfig.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUseCase2" widgetRefId="ButtonConfig" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogConfigMenu" 
+						mode="modeless" horizontalPos="240px" verticalPos="355px" autoClose="true"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentUseCase2.ButtonCharts.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUseCase2" widgetRefId="ButtonCharts" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogChartMenu" 
+						mode="modeless" horizontalPos="240px" verticalPos="435px" autoClose="true"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentUseCase2.ButtonUsers.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUseCase2" widgetRefId="ButtonUsers" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogUserMenu" 
+						mode="modeless" horizontalPos="240px" verticalPos="515px" autoClose="true"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<!--dialog handling-->
+		
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentChartMenu" widgetRefId="ButtonClose" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="DialogChartMenu" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUserMenu" widgetRefId="ButtonClose" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="DialogUserMenu" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentConfigMenu" widgetRefId="ButtonClose" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="DialogConfigMenu" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.currentPageId" event="ValueChanged" />
+
+			<EventHandler condition="oldValue = &quot;UseCasePage&quot;">
+				<Parallel>
+
+					<Action>
+						<Target xsi:type="clientSystem.Action">
+							<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="DialogConfigMenu" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="clientSystem.Action">
+							<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="DialogChartMenu" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="clientSystem.Action">
+							<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="DialogUserMenu" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		
+		
+  </Bindings>
+</EventBindingSet>

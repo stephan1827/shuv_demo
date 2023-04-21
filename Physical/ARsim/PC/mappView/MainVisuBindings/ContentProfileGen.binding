@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentProfileGen_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+		<!--Profile generator-->
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Y" attribute="node" />
+			<Target xsi:type="brease" contentRefId="ContentProfileGen" widgetRefId="ProfileGeneratorYAxisItem1" attribute="node" />
+		</Binding>
+				
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:Y2" attribute="node" />
+			<Target xsi:type="brease" contentRefId="ContentProfileGen" widgetRefId="ProfileGeneratorYAxisItem2" attribute="node" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:X" attribute="node" />
+			<Target xsi:type="brease" contentRefId="ContentProfileGen" widgetRefId="ProfileGeneratorXAxisItem1" attribute="node" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::ProfileGen:X2" attribute="node" />
+			<Target xsi:type="brease" contentRefId="ContentProfileGen" widgetRefId="ProfileGeneratorXAxisItem2" attribute="node" />
+		</Binding>
+		
+		
+  </Bindings>
+</BindingsSet>

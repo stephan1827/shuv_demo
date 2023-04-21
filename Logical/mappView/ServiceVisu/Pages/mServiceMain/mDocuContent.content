@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="mDocuContent" height="618" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.PDFViewer" id="PDFViewer1" top="30" left="43" width="914" height="561" zIndex="0" src="Media/PDF/X20_Datasheet.pdf" />
+  </Widgets>
+</Content>

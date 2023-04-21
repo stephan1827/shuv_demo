@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cTableT30" height="485" width="1024" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="28" left="40" width="940" height="50" zIndex="0" text="Logger with Table" borderWidth="0px 0px 4px 0px" borderColor="rgba(255, 136, 0, 1)" borderStyle="solid" textAlign="left" fontSize="30px" padding="0px 0px 0px 0px" margin="0px" style="TitelLabel" />
+    <Widget xsi:type="widgets.brease.Table" id="TableLogBook" top="140" left="96" width="855" height="320" zIndex="1" ellipsis="true" multiLine="true" rowHeight="54" showScrollbars="false" wordWrap="true" borderStyle="solid" borderWidth="1px 1px 1px 1px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TableItem" id="TableItem2" zIndex="0" columnWidth="150" text="$Alarm.Row.TimeStamp" />
+        <Widget xsi:type="widgets.brease.TableItem" id="TableItem4" zIndex="1" columnWidth="705" text="$IAT/Alarm.Row.Message" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.5.113 SP?>
+<Package PackageType="mappViewControl" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\Config.mappviewcfg</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisu.vis</Object>
+    <Object Type="Package">MainVisuBindings</Object>
+    <Object Type="Package">MainVisuEvents</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\MainVisuNavigation.nav</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\OpcUaServer.uaserver</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\Service.vis</Object>
+    <Object Type="Package">ServiceVisuBindings</Object>
+    <Object Type="Package">ServiceVisuEvents</Object>
+  </Objects>
+</Package>

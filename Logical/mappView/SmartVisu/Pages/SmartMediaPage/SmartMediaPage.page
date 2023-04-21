@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pdef:Page xmlns:pdef="http://www.br-automation.com/iat2015/pageDefinition/v2" id="SmartMediaPage" layoutRefId="SmartLayout">
+  <Assignments>
+    <Assignment type="Content" baseContentRefId="smartMediaContent" areaRefId="area1" backColor="rgba(240, 240, 240, 0.5)" />
+  </Assignments>
+</pdef:Page>

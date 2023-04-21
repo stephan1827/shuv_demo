@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.5.113 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\ServiceVisuBindings\mChartContent_binding.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\ServiceVisuBindings\mDataContent.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\ServiceVisuBindings\mServiceMainContent.binding</Object>
+    <Object Type="File" Reference="true">\Physical\ARsim\PC\mappView\ServiceVisuBindings\mStatisticContent.binding</Object>
+  </Objects>
+</Package>

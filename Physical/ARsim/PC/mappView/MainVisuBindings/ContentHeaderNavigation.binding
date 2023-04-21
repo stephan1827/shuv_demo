@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentHeaderNavigation_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App2" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App3" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp3" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp4" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App5" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp5" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App6" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp6" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App7" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp7" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App8" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp8" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App9" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp9" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App10" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp10" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App11" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp11" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App12" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp12" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App13" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp13" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App14" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp14" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App15" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp15" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App16" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp16" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App17" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp17" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App18" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp18" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App19" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp19" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App20" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp20" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="App21" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentHeaderNavigation" widgetRefId="ToggleApp21" attribute="value" />
+		</Binding>
+		
+  
+
+
+
+</Bindings>
+</BindingsSet>

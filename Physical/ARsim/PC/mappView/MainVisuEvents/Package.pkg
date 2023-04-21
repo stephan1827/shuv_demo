@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Initialization.eventbinding</Object>
+    <Object Type="File">ContentHeader.eventbinding</Object>
+    <Object Type="File">ContentNavigation.eventbinding</Object>
+    <Object Type="File">ContentSystem.eventbinding</Object>
+    <Object Type="File">ContentEventPage.eventbinding</Object>
+    <Object Type="File">ContentThemePage.eventbinding</Object>
+    <Object Type="File">ContentKeyboard.eventbinding</Object>
+    <Object Type="File">ContentStylePage.eventbinding</Object>
+    <Object Type="File">ContentProfileGen.eventbinding</Object>
+    <Object Type="File">ContentFavoriteWatch.eventbinding</Object>
+    <Object Type="File">ContentChartPage.eventbinding</Object>
+    <Object Type="File">ContentAnimationPage.eventbinding</Object>
+    <Object Type="File">ContentUseCaseBase.eventbinding</Object>
+    <Object Type="File">ContentLogin.eventbinding</Object>
+    <Object Type="File">ContentUseCase2.eventbinding</Object>
+    <Object Type="File">ContentUseCase3.eventbinding</Object>
+    <Object Type="File">ContentUseCase6.eventbinding</Object>
+    <Object Type="File">ContentEvent.eventbinding</Object>
+    <Object Type="File">ContentUseCase9.eventbinding</Object>
+    <Object Type="File">ContentFormular.eventbinding</Object>
+    <Object Type="File">ContentScreenSaver.eventbinding</Object>
+    <Object Type="File">ContentDragDrop.eventbinding</Object>
+  </Objects>
+</Package>

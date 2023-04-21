@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/mobile</prop>
+  </header>
+  <body>
+    <tu tuid="Welcome">
+      <tuv xml:lang="en">
+        <seg>User,</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Benutzer,</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MainMenu">
+      <tuv xml:lang="en">
+        <seg>Main Menu</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Hauptmenü</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Production">
+      <tuv xml:lang="en">
+        <seg>Production</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Produktion</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Monitoring">
+      <tuv xml:lang="en">
+        <seg>Monitoring</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Monitoring</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Chart">
+      <tuv xml:lang="en">
+        <seg>Chart</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Chart</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Table">
+      <tuv xml:lang="en">
+        <seg>Data</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Daten</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Docu">
+      <tuv xml:lang="en">
+        <seg>Docu</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Doku</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Service">
+      <tuv xml:lang="en">
+        <seg>Service</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Service</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Statistic">
+      <tuv xml:lang="en">
+        <seg>Statistics</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Statistik</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Back">
+      <tuv xml:lang="en">
+        <seg>Back</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zurück</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm">
+      <tuv xml:lang="en">
+        <seg>Alarms</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alarme</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Recipe">
+      <tuv xml:lang="en">
+        <seg>Recipe</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rezept</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

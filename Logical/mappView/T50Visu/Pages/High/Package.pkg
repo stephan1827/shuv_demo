@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.7.54 SP?>
+<Package PackageType="EmptyMappViewPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">PageA</Object>
+    <Object Type="Package">PageB</Object>
+    <Object Type="Package">PageC</Object>
+    <Object Type="Package">PageD</Object>
+    <Object Type="Package">PageE</Object>
+  </Objects>
+</Package>

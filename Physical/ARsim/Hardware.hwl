@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <Modules>
+    <Module Name="PC" Type="PC_any" X="100" Y="100" />
+    <Module Name="5AP1180.1505-000" Type="5AP1180.1505-000" X="100" Y="-181" />
+    <Module Name="5PC901_TS77_00" Type="5PC901.TS77-00" X="372.5" Y="-171" />
+  </Modules>
+  <Links>
+    <Link From="PC" To="5PC901_TS77_00" FromPort="IF3" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="281" Y="345" />
+      <Point X="281" Y="345" />
+      <Point X="281" Y="350" />
+      <Point X="281" Y="355" />
+      <Point X="475" Y="355" />
+      <Point X="475" Y="-92" />
+      <Point X="428.5" Y="-92" />
+      <Point X="418.5" Y="-92" />
+      <Point X="418.5" Y="-92" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

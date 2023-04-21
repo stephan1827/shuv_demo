@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EventBindingSet id="ContentFavoriteWatch_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2"
+                 xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		<EventBinding id="ContentFavoriteWatch.BtnEditMode.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="BtnEditMode" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.EnableEditMode"/>
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentFavoriteWatch" widgetRefId="BtnSplit">
+								<Method xsi:type="widgets.brease.Button.Action.SetVisible" value="true"/>
+							</Target>
+						</Action>
+					</Step>
+					<Step order="2">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentFavoriteWatch" widgetRefId="BtnCombine">
+								<Method xsi:type="widgets.brease.Button.Action.SetVisible" value="true"/>
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentFavoriteWatch.BtnDisableEditMode.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="BtnDisableEditMode" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.DisableEditMode"/>
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentFavoriteWatch" widgetRefId="BtnSplit">
+								<Method xsi:type="widgets.brease.Button.Action.SetVisible" value="false"/>
+							</Target>
+						</Action>
+					</Step>
+					<Step order="2">
+						<Action>
+							<Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentFavoriteWatch" widgetRefId="BtnCombine">
+								<Method xsi:type="widgets.brease.Button.Action.SetVisible" value="false"/>
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentFavoriteWatch.BtnCombine.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="BtnCombine" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.CombineSelectedBoxes"/>
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentFavoriteWatch.BtnSplit.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="BtnSplit" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.SplitSelectedBoxes"/>
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--button to favoritewatch-->
+		<EventBinding id="ContentFavoriteWatch.Button1.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button1" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem1"/>
+							</Target>
+						</Action>
+					</Step>
+					
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentFavoriteWatch.Button2.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button2" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem2"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentFavoriteWatch.Button3.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button3" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem3"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentFavoriteWatch.Button4.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button4" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem4"/>
+							</Target>
+						</Action>
+					</Step>
+					
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding id="ContentFavoriteWatch.Button5.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button5" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem5"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button6.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button6" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem6"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button7.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button7" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem7"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button8.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button8" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem8"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button9.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button9" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem9"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button10.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button10" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem10"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+				
+		<EventBinding id="ContentFavoriteWatch.Button11.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button11" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem11"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button12.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button12" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem12"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button13.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button13" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem13"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button14.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button14" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem14"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+				
+		<EventBinding id="ContentFavoriteWatch.Button15.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button15" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem15"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+
+		<EventBinding id="ContentFavoriteWatch.Button16.Click">
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentFavoriteWatch" widgetRefId="Button16" event="Click"/>
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.FavoriteWatch.Action" contentRefId="ContentFavoriteWatch" widgetRefId="FavoriteWatch1">
+								<Method xsi:type="widgets.brease.FavoriteWatch.Action.UpdateBoxItemConnection" index="" itemId="FavoriteWatchItem16"/>
+							</Target>
+						</Action>
+					</Step>
+				
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+  </Bindings>
+</EventBindingSet>

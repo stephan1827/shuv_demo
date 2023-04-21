@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pdef:Page xmlns:pdef="http://www.br-automation.com/iat2015/pageDefinition/v2" id="ScreenSaverPage" layoutRefId="MainLayout">
+  <Assignments>
+    <Assignment type="Content" baseContentRefId="ContentScreenSaver" areaRefId="AreaContent" styleRefId="transparent" backColor="rgba(0, 0, 0, 0.5)" backGround="Media/BackGround/MainPageBackGround.png" />
+  </Assignments>
+</pdef:Page>

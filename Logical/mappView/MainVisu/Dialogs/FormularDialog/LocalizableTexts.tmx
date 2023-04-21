@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/Formular</prop>
+  </header>
+  <body>
+    <tu tuid="InfoHeader">
+      <tuv xml:lang="de">
+        <seg>Eingabe über Tastatur</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Keyboard input</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="EnterValues">
+      <tuv xml:lang="de">
+        <seg>Bitte Werte eingeben</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Please enter values</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SubmitValues">
+      <tuv xml:lang="de">
+        <seg>Übernehmen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Submit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SumittedValues">
+      <tuv xml:lang="de">
+        <seg>Bestätigte Werte</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Submitted values</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

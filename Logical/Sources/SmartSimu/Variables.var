@@ -1,0 +1,7 @@
+VAR
+	emtptyOEE : INT;
+	currentOEE : INT;
+	timeLineData : STRING[255];
+	currentPerf : REAL;
+	seventyFive : BOOL;
+END_VAR

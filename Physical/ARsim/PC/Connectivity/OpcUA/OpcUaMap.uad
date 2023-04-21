@@ -1,0 +1,2367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="3">
+  <DefaultView>
+    <ACL>
+      <ACE Role="Service" Write="True" />
+      <ACE Role="Everyone" Write="True" />
+      <ACE Role="Operator" Write="True" />
+    </ACL>
+    <Module>
+      <Task Name="Logarithmi" Enable="True">
+        <Variable Name="axis_scale_x" Enable="True" />
+        <Variable Name="axis_scale_y" Enable="True" />
+        <Variable Name="label" Enable="True" />
+        <Variable Name="output_string_chart" Enable="True" />
+        <Variable Name="raw_values_x_axis_1" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0.001</Low>
+              <High ValueProvider="Const">1</High>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="raw_values_y_axis_1" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">1</Low>
+              <High ValueProvider="Const">1000</High>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="show_graph_2" Enable="True" />
+        <Variable Name="stroke_color_1" Enable="True" />
+        <Variable Name="stroke_width_1" Enable="True" />
+        <Variable Name="unit_x_axis" Enable="True" />
+        <Variable Name="unit_y_axis" Enable="True" />
+      </Task>
+      <Task Name="UseCase" Enable="True">
+        <Variable Name="basicLength" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">1000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millimetre</Text>
+              </Description>
+              <DisplayName>
+                <Text>mm</Text>
+              </DisplayName>
+              <UnitId>5066068</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="basicPressure" Enable="True">
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>bar [unit of pressure]</Text>
+              </Description>
+              <DisplayName>
+                <Text>bar</Text>
+              </DisplayName>
+              <UnitId>4342098</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="basicTemperature" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">-200</Low>
+              <High ValueProvider="Const">200</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="transformationIndex" Enable="True" />
+        <Variable Name="useCaseTransformation" Enable="True" />
+      </Task>
+      <Task Name="Paper" Enable="True">
+        <Variable Name="boolStart" Enable="True" />
+        <Variable Name="BOX_COUNTER" Enable="True" />
+        <Variable Name="startBoxLift" Enable="True" />
+        <Variable Name="startSkiLift" Enable="True" />
+        <Variable Name="svgContent" Enable="True" />
+        <Variable Name="svgFilePath" Enable="True" />
+        <Variable Name="transform" Enable="True" />
+        <Variable Name="transformLift" Enable="True" />
+        <Variable Name="transformSki" Enable="True" />
+        <Variable Name="transitionTime" Enable="True" />
+      </Task>
+      <Task Name="Chart" Enable="True">
+        <Variable Name="chartValue" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">200</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+          <Variable Name="chartValue[0]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[1]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[2]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[3]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[4]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[5]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[6]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[7]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[8]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[9]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[10]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[11]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[12]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[13]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[14]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[15]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[16]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[17]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[18]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[19]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[20]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[21]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[22]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[23]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[24]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[25]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[26]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[27]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[28]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[29]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[30]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[31]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[32]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[33]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[34]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[35]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[36]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[37]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[38]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[39]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[40]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[41]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[42]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[43]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[44]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[45]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[46]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[47]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[48]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="chartValue[49]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+        </Variable>
+        <Variable Name="graphValue" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">200</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+          <Variable Name="graphValue[0]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[1]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[2]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[3]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[4]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[5]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[6]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[7]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[8]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="graphValue[9]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+        </Variable>
+        <Variable Name="StackedBarChart" Enable="True" EnableArrayElements="True" />
+      </Task>
+      <Task Name="mvClient" Enable="True">
+        <Variable Name="clientSlots" Enable="True" EnableArrayElements="True" />
+      </Task>
+      <Task Name="Table" Enable="True">
+        <Variable Name="myTable" Enable="True" AutomaticEnable="True" />
+        <Variable Name="selectedTableIndex" Enable="True" />
+      </Task>
+      <Task Name="VarList" Enable="True">
+        <Variable Name="Color" Enable="True" EnableArrayElements="True" />
+      </Task>
+      <Task Name="Simulation" Enable="True">
+        <Variable Name="ExpressionInC" Enable="True" />
+        <Variable Name="indicateStyle" Enable="True" />
+        <Variable Name="maxLimit" Enable="True">
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="minLimit" Enable="True">
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="myTestBool" Enable="True" />
+        <Variable Name="myTestInt" Enable="True" />
+        <Variable Name="userLimitValue" Enable="True">
+          <ACL Inherit="InheritNone">
+            <ACE Role="Service" Write="True" />
+            <ACE Role="Everyone" />
+            <ACE Role="Operator" Write="True" />
+          </ACL>
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">500</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EURange" Priority="1">
+            <ACL Inherit="InheritNone">
+              <ACE Role="Everyone" />
+            </ACL>
+            <Value>
+              <Low ValueProvider="Const">35</Low>
+              <High ValueProvider="Const">250</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EURange" Priority="2">
+            <ACL Inherit="InheritNone">
+              <ACE Role="Service" />
+            </ACL>
+            <Value>
+              <Low ValueProvider="Const">20</Low>
+              <High ValueProvider="Const">300</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EURange" Priority="3">
+            <ACL Inherit="InheritNone">
+              <ACE Role="Operator" />
+            </ACL>
+            <Value>
+              <Low ValueProvider="Const">35</Low>
+              <High ValueProvider="Const">250</High>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="valueCel" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="PV">::Simulation:minLimit</Low>
+              <High ValueProvider="PV">::Simulation:maxLimit</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="valuemm" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">10000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millimetre</Text>
+              </Description>
+              <DisplayName>
+                <Text>mm</Text>
+              </DisplayName>
+              <UnitId>5066068</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="X" Enable="True" />
+        <Variable Name="Y" Enable="True" />
+      </Task>
+      <Task Name="ProfileGen" Enable="True">
+        <Variable Name="configurationJSON" Enable="True" />
+        <Variable Name="Value1" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value10" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value11" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value12" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value13" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value14" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value15" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value16" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value17" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value18" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value19" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value2" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value20" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value3" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value4" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value5" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value6" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value7" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value8" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="Value9" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">2000</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="X" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">500</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millimetre</Text>
+              </Description>
+              <DisplayName>
+                <Text>mm</Text>
+              </DisplayName>
+              <UnitId>5066068</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+          <Variable Name="X[0]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="X[1]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="X[2]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="X[3]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="X[4]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+        </Variable>
+        <Variable Name="X2" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">500</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millimetre</Text>
+              </Description>
+              <DisplayName>
+                <Text>mm</Text>
+              </DisplayName>
+              <UnitId>5066068</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+          <Variable Name="X2[0]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="X2[1]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="X2[2]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="X2[3]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="X2[4]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">500</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm</Text>
+                </DisplayName>
+                <UnitId>5066068</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+        </Variable>
+        <Variable Name="Y" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">200</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millimetre per second</Text>
+              </Description>
+              <DisplayName>
+                <Text>mm/s</Text>
+              </DisplayName>
+              <UnitId>4403510</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+          <Variable Name="Y[0]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Y[1]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Y[2]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Y[3]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Y[4]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+        </Variable>
+        <Variable Name="Y2" Enable="True" EnableArrayElements="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">100</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millimetre per second</Text>
+              </Description>
+              <DisplayName>
+                <Text>mm/s</Text>
+              </DisplayName>
+              <UnitId>4403510</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+          <Variable Name="Y2[0]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Y2[1]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Y2[2]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Y2[3]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Y2[4]">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millimetre per second</Text>
+                </Description>
+                <DisplayName>
+                  <Text>mm/s</Text>
+                </DisplayName>
+                <UnitId>4403510</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="SmartSimu" Enable="True">
+        <Variable Name="currentOEE" Enable="True" />
+        <Variable Name="currentPerf" Enable="True" />
+        <Variable Name="emtptyOEE" Enable="True" />
+        <Variable Name="timeLineData" Enable="True" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

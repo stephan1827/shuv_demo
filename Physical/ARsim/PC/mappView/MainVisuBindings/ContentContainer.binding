@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentContainer_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentContainer" widgetRefId="CheckBox6" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentContainer" widgetRefId="GroupBox1" attribute="visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentContainer" widgetRefId="CheckBox5" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentContainer" widgetRefId="Button4" attribute="visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentContainer" widgetRefId="CheckBox7" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentContainer" widgetRefId="GroupBox1" attribute="enable" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentContainer" widgetRefId="CheckBox5" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentContainer" widgetRefId="Button6" attribute="visible" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentContainer" widgetRefId="NumericInput4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentContainer" widgetRefId="NumericInput6" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="brease" contentRefId="ContentContainer" widgetRefId="NumericInput3" attribute="value" />
+			<Target xsi:type="brease" contentRefId="ContentContainer" widgetRefId="NumericInput5" attribute="value" />
+		</Binding>
+		
+	</Bindings>
+</BindingsSet>

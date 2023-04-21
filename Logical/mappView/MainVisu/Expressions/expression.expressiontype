@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTypeSet id="myExpressionTypeSet" xmlns="http://www.br-automation.com/iat2016/expressionType/v1">
+	<ExpressionTypes> 
+		<ExpressionType name="MyAndExpressionType" datatype="BOOL">
+			<Operands>
+				<Operand name="inA" datatype="BOOL" />
+				<Operand name="inB" datatype="BOOL" />
+				<Operand name="inC" datatype="ANY_REAL" />
+			</Operands>
+			<Operation>
+				(inC &gt; 30 AND inA) AND inB
+			</Operation>
+		</ExpressionType>
+		
+		
+		<ExpressionType name="MyCursorExpressionType" datatype="ANY_INT">
+			<Operands>
+				<Operand name="inCursor1" datatype="ANY_INT" />
+				<Operand name="inCursor2" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				inCursor2 - inCursor1
+			</Operation>
+		</ExpressionType>
+		
+		
+	</ExpressionTypes>
+</ExpressionTypeSet>

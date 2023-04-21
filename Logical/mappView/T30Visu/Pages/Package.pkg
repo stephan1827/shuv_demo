@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.7.54 SP?>
+<Package PackageType="PagesPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="AreaContents">AreaContents</Object>
+    <Object Type="Package">pWidgets</Object>
+    <Object Type="Package">pGauges</Object>
+    <Object Type="Package">pTouch</Object>
+    <Object Type="Package">pChar</Object>
+    <Object Type="Package">pStyle</Object>
+    <Object Type="Package">pTable</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentVarList" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="293" left="-78" width="285" height="110" zIndex="0" multiLine="true" text="$Page.Dynamic" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="1" image="Media/SVGsymbols/Symbols/Server.svg" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="DropDownBox1" top="152" left="440" width="277" height="49" zIndex="78" dataProvider="[{'value':'0','text':'Black'},{'value':'1','text':'White'},{'value':'2','text':'Red'},{'value':'3','text':'Green'},{'value':'4','text':'Blue'},{'value':'5','text':'Yellow'},{'value':'6','text':'Azure'},{'value':'7','text':'Medium Orchid'},{'value':'8','text':'B&amp;R Orange'},{'value':'9','text':'Silver'}]" listWidth="250" selectedValue="0" fontSize="24px" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="256" left="570" width="200" height="60" zIndex="79" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" textAlign="left" style="Overview" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput2" top="356" left="570" width="200" height="60" zIndex="80" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" textAlign="left" style="Overview" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput3" top="456" left="570" width="200" height="60" zIndex="81" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" textAlign="left" style="Overview" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="271" left="440" width="109" zIndex="82" text="Red" textColor="rgba(255, 0, 0, 1)" fontSize="32px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="371" left="440" width="109" zIndex="83" text="Green" textColor="rgba(0, 255, 0, 1)" fontSize="32px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="471" left="440" width="109" zIndex="84" text="Blue" textColor="rgba(0, 0, 255, 1)" fontSize="32px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="162" left="146" width="245" zIndex="85" text="$IAT/Page.Select" fontSize="32px" style="Caption" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="13" left="875" width="690" height="726" zIndex="86" text="Monitor">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="15" left="15" width="320" height="120" zIndex="2" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label5" top="0" left="0" width="122" zIndex="1" text="Color[0].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="0" left="0" zIndex="2" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label6" top="0" left="0" width="122" zIndex="0" text="Color[0].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput5" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label7" top="0" left="0" width="122" zIndex="4" text="Color[0].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput6" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="150" left="15" width="320" height="120" zIndex="3" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label8" top="0" left="0" width="122" zIndex="0" text="Color[1].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput7" top="0" left="0" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label9" top="0" left="0" width="122" zIndex="2" text="Color[1].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput8" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label10" top="0" left="0" width="122" zIndex="4" text="Color[1].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput9" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="285" left="15" width="320" height="120" zIndex="4" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label11" top="0" left="0" width="122" zIndex="0" text="Color[2].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput10" top="0" left="0" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label12" top="0" left="0" width="122" zIndex="2" text="Color[2].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput11" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label13" top="0" left="0" width="122" zIndex="4" text="Color[2].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput12" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox5" top="420" left="15" width="320" height="120" zIndex="5" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label14" top="0" left="0" width="122" zIndex="0" text="Color[3].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput13" top="0" left="0" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label15" top="0" left="0" width="122" zIndex="2" text="Color[3].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput14" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label16" top="0" left="0" width="122" zIndex="4" text="Color[3].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput15" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox6" top="555" left="15" width="320" height="120" zIndex="6" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label17" top="0" left="0" width="122" zIndex="0" text="Color[4].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput16" top="0" left="0" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label18" top="0" left="0" width="122" zIndex="2" text="Color[4].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput17" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label19" top="0" left="0" width="122" zIndex="4" text="Color[4].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput18" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox7" top="15" left="350" width="320" height="120" zIndex="7" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label20" top="0" left="0" width="122" height="32" zIndex="0" text="Color[5].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput19" top="0" left="0" height="32" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label21" top="0" left="0" width="122" height="32" zIndex="2" text="Color[5].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput20" top="0" left="0" height="32" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label22" top="0" left="0" width="122" height="32" zIndex="4" text="Color[5].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput21" top="0" left="0" height="32" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox8" top="150" left="350" width="320" height="120" zIndex="8" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label23" top="0" left="0" width="122" height="32" zIndex="0" text="Color[6].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput22" top="0" left="0" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label24" top="0" left="0" width="122" height="32" zIndex="2" text="Color[6].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput23" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label25" top="0" left="0" width="122" zIndex="4" text="Color[6].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput24" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox9" top="285" left="350" width="320" height="120" zIndex="9" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label26" top="0" left="0" width="122" zIndex="0" text="Color[7].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput25" top="0" left="0" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label27" top="0" left="0" width="122" zIndex="2" text="Color[7].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput26" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label28" top="0" left="0" width="122" zIndex="4" text="Color[7].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput27" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox10" top="420" left="350" width="320" height="120" zIndex="10" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label29" top="0" left="0" width="122" zIndex="0" text="Color[8].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput28" top="0" left="0" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label30" top="0" left="0" width="122" zIndex="2" text="Color[8].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput29" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label31" top="0" left="0" width="122" zIndex="4" text="Color[8].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput30" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox11" top="555" left="350" width="320" height="120" zIndex="11" childPositioning="relative" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Label" id="Label32" top="0" left="0" width="122" zIndex="0" text="Color[9].Red" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput31" top="0" left="0" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label33" top="0" left="0" width="122" zIndex="2" text="Color[9].Green" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput32" top="0" left="0" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.Label" id="Label34" top="0" left="0" width="122" zIndex="4" text="Color[9].Blue" margin="5px 20px 0px 20px" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput33" top="0" left="0" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':3}}" margin="5px 20px 0px 20px" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label35" top="60" left="1025" width="100" height="50" zIndex="87" multiLine="true" text="Black" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label36" top="195" left="1025" width="100" height="50" zIndex="88" multiLine="true" text="White" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label37" top="330" left="1025" width="100" height="50" zIndex="89" multiLine="true" text="Red" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label38" top="465" left="1025" width="100" height="50" zIndex="90" multiLine="true" text="Green" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label39" top="600" left="1025" width="100" height="50" zIndex="91" multiLine="true" text="Blue" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label40" top="60" left="1355" width="100" height="50" zIndex="92" multiLine="true" text="Yellow" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label41" top="195" left="1355" width="100" height="50" zIndex="93" multiLine="true" text="Azure" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label42" top="330" left="1355" width="100" height="50" zIndex="94" multiLine="true" text="Medium Orchid" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label43" top="465" left="1355" width="100" height="50" zIndex="95" multiLine="true" text="B&amp;R Orange" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="Label44" top="600" left="1355" width="100" height="50" zIndex="96" multiLine="true" text="Silver" wordWrap="true" borderWidth="1px" cornerRadius="4px" backColor="rgba(255, 255, 204, 1)" borderStyle="solid" textAlign="center" rotation="330deg" fontSize="18px" style="Caption" />
+  </Widgets>
+</Content>
