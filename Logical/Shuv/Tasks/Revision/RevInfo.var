@@ -1,12 +1,12 @@
 (* RevInfo.var 2.0.0 *)
 VAR CONSTANT
-	revision : STRING[80] := 'v0.1.9-30-gd19ac27';
-	revisionDate : STRING[80] := '2021-08-09 11:51:58 -0400';
-	revisionAuthor : STRING[80] := 'Andrew Musser';
-	branchName : STRING[80] := 'feature/shuvExport';
-	uncommittedChanges : STRING[80] := ' 4 files changed, 24 insertions(+), 26 deletions(-)';
-	buildDate  : STRING[80] := '2021-08-09 11:56:14 -0400';
-	buildConfiguration : STRING[80] := '$AS_CONFIGURATION';
-	builder : STRING[80] := '$AS_USER_NAME';
-	versionId : STRING[80] := 'v0.1.9-30-gd19ac27';
+	revision : STRING[80] := 'fd9bc62';
+	revisionDate : STRING[80] := '2023-04-21 13:41:19 +0200';
+	revisionAuthor : STRING[80] := 'Stephan Stricker';
+	branchName : STRING[80] := 'main';
+	uncommittedChanges : STRING[80] := ' 13 files changed, 15 insertions(+), 126 deletions(-)';
+	buildDate  : STRING[80] := '2023-04-21 14:17:33 +0200';
+	buildConfiguration : STRING[80] := 'X20CP3585_T50';
+	builder : STRING[80] := 'strickers';
+	versionId : STRING[80] := 'fd9bc62';
 END_VAR

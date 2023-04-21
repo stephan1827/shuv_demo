@@ -6,7 +6,5 @@
     <Object Type="Package">ThirdPartyCertificates</Object>
     <Object Type="Package">CertificateRevocationLists</Object>
     <Object Type="Package">CertificateSigningRequests</Object>
-    <Object Type="Package">OwnCertificates1</Object>
-    <Object Type="Package">ThirdPartyCertificates1</Object>
   </Objects>
 </Package>
