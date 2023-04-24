@@ -1,12 +1,12 @@
 (* RevInfo.var 2.0.0 *)
 VAR CONSTANT
-	revision : STRING[80] := 'fd9bc62';
-	revisionDate : STRING[80] := '2023-04-21 13:41:19 +0200';
+	revision : STRING[80] := 'd098444';
+	revisionDate : STRING[80] := '2023-04-21 14:19:09 +0200';
 	revisionAuthor : STRING[80] := 'Stephan Stricker';
 	branchName : STRING[80] := 'main';
-	uncommittedChanges : STRING[80] := ' 13 files changed, 15 insertions(+), 126 deletions(-)';
-	buildDate  : STRING[80] := '2023-04-21 14:17:33 +0200';
+	uncommittedChanges : STRING[80] := ' 3 files changed, 2 insertions(+), 13 deletions(-)';
+	buildDate  : STRING[80] := '2023-04-24 09:45:59 +0200';
 	buildConfiguration : STRING[80] := 'X20CP3585_T50';
 	builder : STRING[80] := 'strickers';
-	versionId : STRING[80] := 'fd9bc62';
+	versionId : STRING[80] := 'd098444';
 END_VAR
