@@ -1,0 +1,29 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=IotCtrl 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=200 Type=100 Scope=60 Force=60 Index=3 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                                    diag                             Diagnose_typ    0 "                                                               *"    0   24    1    0    1    1         
+                                      in                           DiagnoseIn_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                     cmd                        DiagnoseInCmd_typ    0 "                                                               *"    2   24    1    0    0    1         
+                                    ping                                     BOOL    0 "                                                            TRUE"    3    1    1    2    0    0         
+                                     cfg                        DiagnoseInCfg_typ    0 "                                                               *"    2   24    1    0    0    1         
+                                    host                               STRING[80]    0 "                                                    'google.com'"    3    9   81    1    0    0         
+                              timeout_ms                                    UDINT    0 "                                                             200"    3    7    1   10    0    0         
+                                     out                          DiagnoseOut_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                   error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                             errorString                              STRING[200]    0 "                                                              ''"    2    9  201    1    0    0         
+                                    done                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                internal                     DiagnoseInternal_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                     fub                  DiagnoseInternalFub_typ    0 "                                                               *"    2   24    1    0    0    0         
+                                    ping                                 IcmpPing    0 "                                                               *"    3   24    1    0    0    0         
+                                  enable                                     BOOL    0 "                                                           FALSE"    4    1    1    2    0    0         
+                                   pHost                                    UDINT    0 "                                                               0"    4    7    1   10    0    0         
+                                 timeout                                     UINT    0 "                                                               0"    4    6    1   10    0    0         
+                                  status                                     UINT    0 "                                                               0"    4    6    1   10    0    0         
+                                 i_state                                     UINT    0 "                                                               0"    4    6    1   10    0    0         
+                                i_result                                     UINT    0 "                                                               0"    4    6    1   10    0    0         
+                                   i_tmp                                    UDINT    0 "                                                               0"    4    7    1   10    0    0         
+                                   state                                     DINT    0 "                                                               0"    2    4    1   10    0    0 e,0,DIAG
+
+                               errorCode                               STRING[80]    0 "                                                              ''"    2    9   81    1    0    0         
+                                     cmd                        DiagnoseInCmd_typ    0 "                                                               *"    2   24    1    0    0    0         
+                                    ping                                     BOOL    0 "                                                               *"    3    1    1    2    0    0         
