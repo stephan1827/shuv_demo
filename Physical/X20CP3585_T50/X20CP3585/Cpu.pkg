@@ -18,6 +18,7 @@
     <Build GccVersion="4.1.2" PreBuildStep="&quot;$(AS_PROJECT_PATH)\Logical\Shuv\Tasks\Revision\getRevInfo.sh&quot; $(AS_PROJECT_PATH)\Logical\Shuv\Tasks\Revision $(AS_CONFIGURATION) $(AS_USER_NAME)" />
     <DefaultTargetMemory Tasks="UserROM" />
     <Safety SafetyRelease="0.0" />
+    <Transfer SavedOfflineInstallationFolder="" SavedPipDestinationFolder="" SavedRuntimeUtilityCenterPackagePath="" />
     <Vc FirmwareVersion="V4.33.0" />
   </Configuration>
 </Cpu>
