@@ -4,9 +4,7 @@
   <TaskClass Name="Cyclic#1" />
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
-  <TaskClass Name="Cyclic#4">
-    <Task Name="RevInfo" Source="Shuv.Tasks.Revision.RevInfo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-  </TaskClass>
+  <TaskClass Name="Cyclic#4" />
   <TaskClass Name="Cyclic#5">
     <Task Name="Chart" Source="Sources.Chart.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
@@ -15,6 +13,7 @@
   </TaskClass>
   <TaskClass Name="Cyclic#7" />
   <TaskClass Name="Cyclic#8">
+    <Task Name="RevInfo" Source="Shuv.Tasks.Revision.RevInfo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="IotCtrl" Source="Shuv.Tasks.IoT.IotCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <Binaries>
