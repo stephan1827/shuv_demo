@@ -10,7 +10,7 @@
       <Parameter ID="DNAConfiguration" Value="manual" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="mvHighlight_5_0_X20CP1585_T50" />
-    <Parameter ID="UserPartitionSize" Value="100" />
+    <Parameter ID="UserPartitionSize" Value="512" />
     <Parameter ID="Cyclic8Stack" Value="65535" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="USER" />
