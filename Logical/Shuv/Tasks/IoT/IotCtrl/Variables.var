@@ -6,7 +6,7 @@ END_VAR
 (*Shuv core vars*)
 VAR
 	shuv : Shuv_typ;
-	fileData : STRING[30000000];
+	fileData : STRING[50000000];
 	diag : Diagnose_typ;
 	fioManage : FIOManage_typ;
 END_VAR
