@@ -18,6 +18,8 @@
     <Group ID="FileDevice2" />
     <Parameter ID="FileDeviceName2" Value="CF_User" />
     <Parameter ID="FileDevicePath2" Value="F:/" />
+    <Parameter ID="ActivateSntp" Value="1" />
+    <Parameter ID="SntpcServAddr1" Value="time.google.com" />
     <Parameter ID="ActivateDns" Value="1" />
     <Parameter ID="GetDnsFromDhcp" Value="2" />
     <Parameter ID="ActivateOpcUa" Value="1" />
