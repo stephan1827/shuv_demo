@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="cT50A" height="480" width="480" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="WPButton1" top="20" left="0" width="140" height="50" zIndex="0" text="Button" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.Button" id="WPButton1" top="20" left="0" width="140" height="50" zIndex="0" text="Button1" style="defaultSmall" />
     <Widget xsi:type="widgets.brease.Button" id="WPButton2" top="20" left="160" width="140" height="50" zIndex="1" image="Media/SVGsymbols/Symbols/Service.svg" text="Button" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" style="defaultSmall" />
     <Widget xsi:type="widgets.brease.Button" id="WPButton3" top="20" left="320" width="140" height="50" zIndex="2" image="Media/SVGsymbols/Symbols/Service.svg" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" style="defaultSmall" />
-    <Widget xsi:type="widgets.brease.CheckBox" id="WPCheckBox1" top="280" left="200" width="160" height="30" zIndex="3" text="CheckBox1" />
-    <Widget xsi:type="widgets.brease.CheckBox" id="WPCheckBox2" top="320" left="200" width="160" height="30" zIndex="4" text="CheckBox2" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="WPCheckBox1" top="280" left="200" width="160" zIndex="3" text="CheckBox1" />
+    <Widget xsi:type="widgets.brease.CheckBox" id="WPCheckBox2" top="320" left="200" width="160" zIndex="4" text="CheckBox2" />
     <Widget xsi:type="widgets.brease.RadioButtonGroup" id="WPRadioButtonGroup1" top="100" left="0" width="180" height="170" zIndex="5" childPositioning="relative">
       <Widgets>
-        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton1" top="0" left="0" width="150" height="30" zIndex="0" text="RadioButton1" margin="5px" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton2" top="0" left="0" width="150" height="30" zIndex="1" text="RadioButton2" margin="5px" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton3" top="0" left="0" width="150" height="30" zIndex="2" text="RadioButton3" margin="5px" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton4" top="0" left="0" width="150" height="30" zIndex="3" text="RadioButton4" margin="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton1" top="0" left="0" zIndex="0" text="RadioButton1" margin="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton2" top="0" left="0" zIndex="1" text="RadioButton2" margin="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton3" top="0" left="0" zIndex="2" text="RadioButton3" margin="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="WPRadioButton4" top="0" left="0" zIndex="3" text="RadioButton4" margin="5px" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.DropDownBox" id="WPDropDownBox1" top="280" left="0" width="140" height="34" zIndex="6" dataProvider="[{'value':0,'text':'Item 0'},{'value':1,'text':'Item 1'},{'value':2,'text':'Item 2'}]" />
-    <Widget xsi:type="widgets.brease.ListBox" id="WPListBox1" top="340" left="0" width="140" height="120" zIndex="7" dataProvider="[{'value':0,'text':'List item 0'},{'value':1,'text':'List item 1'},{'value':2,'text':'List item 2'},{'value':3,'text':'List item 3'},{'value':4,'text':'List item 4'},{'value':5,'text':'List item 5'}]" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="WPDropDownBox1" top="280" left="0" width="140" height="34" zIndex="6" dataProvider="[{'value':'0','text':'Item 0'},{'value':'1','text':'Item 1'},{'value':'2','text':'Item 2'}]" />
+    <Widget xsi:type="widgets.brease.ListBox" id="WPListBox1" top="340" left="0" width="140" height="120" zIndex="7" dataProvider="[{'value':'0','text':'List item 0'},{'value':'1','text':'List item 1'},{'value':'2','text':'List item 2'},{'value':'3','text':'List item 3'},{'value':'4','text':'List item 4'},{'value':'5','text':'List item 5'}]" />
     <Widget xsi:type="widgets.brease.NumericInput" id="WPNumericInput1" top="360" left="200" width="120" height="50" zIndex="8" value="123" fontSize="30px" style="Input" />
     <Widget xsi:type="widgets.brease.NumericInput" id="WPNumericInput2" top="420" left="200" width="120" height="50" zIndex="9" value="456" fontSize="30px" style="Input" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="WPNumericOutput1" top="360" left="340" width="120" height="50" zIndex="10" fontSize="30px" style="Output" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="WPNumericOutput2" top="420" left="340" width="120" height="50" zIndex="11" fontSize="30px" style="Output" />
-    <Widget xsi:type="widgets.brease.Label" id="WPLabel1" top="200" left="300" width="80" height="30" zIndex="12" text="Label1" />
-    <Widget xsi:type="widgets.brease.Label" id="WPLabel2" top="200" left="380" width="80" height="30" zIndex="13" text="Label2" style="Title1" />
-    <Widget xsi:type="widgets.brease.Label" id="WPLabel3" top="240" left="220" width="80" height="30" zIndex="14" text="Label3" style="Title2" />
-    <Widget xsi:type="widgets.brease.Label" id="WPLabel4" top="240" left="340" width="80" height="30" zIndex="15" text="Label4" style="Title3" />
+    <Widget xsi:type="widgets.brease.Label" id="WPLabel1" top="200" left="300" zIndex="12" text="Label1" />
+    <Widget xsi:type="widgets.brease.Label" id="WPLabel2" top="200" left="380" zIndex="13" text="Label2" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="WPLabel3" top="240" left="220" zIndex="14" text="Label3" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="WPLabel4" top="240" left="340" zIndex="15" text="Label4" style="Title3" />
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="WPToggleSwitch1" top="100" left="320" width="140" height="50" zIndex="16" mouseDownText="On" text="Off" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="WPToggleButton4" top="120" left="180" width="90" height="90" zIndex="17" mouseDownText="Off" text="On" cornerRadius="999px" fontSize="30px" />
   </Widgets>
